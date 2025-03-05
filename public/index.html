@@ -16,6 +16,7 @@
     <script src="https://kit.fontawesome.com/4e769e3898.js" crossorigin="anonymous"></script>
     <!-- <script type="text/javascript" src="./assets/js/xlsx.full.min.js"></script> -->
     <script type="module" src="./assets/js/main.js" defer></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <title>Idance Studio | Aliia Pushilina</title>
   </head>
 
@@ -922,11 +923,16 @@
     </div>
 </footer>
     <!-- footer  -->
-    <!-- <script>
-      const content = "{"en":"Dancing classes to your doorstep.","de":"Tanzklassen zu deinem Dorf."}";
-      //const content = //{//{ moto | dump | safe }};
-      let locale = "en"; // Set default locale from front matter
-      console.log(content);
-    </script> -->
+    <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
   </body>
 </html>
