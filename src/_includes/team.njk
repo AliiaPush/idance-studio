@@ -1,0 +1,36 @@
+<!-- team  -->
+    <section data-main-section="team" id="team" class="our-team container">
+        <!-- page topic  -->
+        <div class="page-topic-container">
+            <h3 class="page-topic" data-key-text="team.title">
+                {% for item1 in collections.navigations %}{{ item1.data.ourTeam.en }}{% endfor %}
+            </h3>
+        </div>
+        <div class="team">
+        {% for item in collections.team %}
+            <div data-lazy-load class="team-member">
+                <div class="team-member-img-container member-{{ loop.index }}">
+                    <a href="/{{ item.data.name.en | slug }}" class="team-member-details-btn">
+                        <span class="team-member-details-icon-container">
+                            <i class="fa-regular fa-address-card team-member-details-icon"></i>
+                        </span>
+                        <img class="team-member-img" src="./assets/images/team/{{ item.data.img }}" alt="{{ item.data.name.en }}" />
+                    </a>
+                    <!-- ----------------------------------------------------------------------- -->
+                    <!--                src="./assets/images/team/your-image-name.format"        -->
+                    <!-- ----------------------------------------------------------------------- -->
+                </div>
+                <div class="team-member-name-container">
+                    <p class="team-member-name" data-key-text="team.data.{{ loop.index0 }}.name">{{ item.data.name.en }}</p>
+                </div>
+                <div class="team-member-position-container">
+                    <p class="team-member-position" data-key-text="team.data.{{ loop.index0 }}.bio">
+                        {{ item.data.bio.en}}
+                    </p>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+        <!-- page topic  -->
+    </section>
+    <!-- team  -->

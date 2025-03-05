@@ -1,0 +1,59 @@
+    <section data-main-section="news" id="news" class="news container">
+        <div class="page-topic-container">
+            <h3 class="page-topic" data-key-text="news.title">
+                {% for item1 in collections.news %}{{ item1.data.news.en }}{% endfor %}
+            </h3>
+        </div>
+        <div class="news-display">
+            <div class="news-navigators">
+                {% for item in collections.news %}
+                <!-- news navigator  -->
+                <div data-lazy-load data-news-navigator="{{ loop.index }}" class="news-navigator {% if loop.index == 1 %}active-news{% endif %}">
+                    <div class="news-navigator-icon-container">
+                        <span class="material-symbols-outlined news-navigator-icon">
+                            <!-- beenhere -->
+                            overview_key
+                        </span>
+                    </div>
+                    <div class="news-navigator-img-container">
+                        <!-- ----------------------------------------------------------------------- -->
+                        <!--                src="./assets/images/news/your-image-name.format"        -->
+                        <!-- ----------------------------------------------------------------------- -->
+                        <img data-news-navigator-img src="./assets/images/news/{{ item.data.img }}" class="news-navigator-img"></img>
+                    </div>
+                </div>
+                <!-- news navigator  -->
+                {% endfor %}
+            </div>
+            <!-- news  -->
+            {% set defaultNews = collections.news | first %}
+            <div data-lazy-load class="news-container">
+                <div class="news-skeleton">
+                    <div class="news-skeleton-img"></div>
+                    <div class="news-skeleton-news">
+                        <div class="news-skeleton-title"></div>
+                        <div class="news-skeleton-description"></div>
+                    </div>
+                </div>
+                <div class="news-img-container">
+                    <!-- ----------------------------------------------------------------------- -->
+                    <!--                src="./assets/images/news/your-image-name.format"        -->
+                    <!-- ----------------------------------------------------------------------- -->
+                    <img id="news-img" src="./assets/images/news/{{ defaultNews.data.img }}" alt="" class="news-img">
+                </div>
+                {% for item in collections.news %}
+                <!-- news content  -->
+                <div data-news="{{ loop.index }}" class="news-content-container">
+                    <h4 class="news-content-title" data-key-text="news.data.{{ loop.index0 }}.title">
+                        {{ item.data.title.en }}
+                    </h4>
+                    <span class="news-content-description" data-key-text="news.data.{{ loop.index0 }}.content">
+                        {{ item.data.description.en | markdownify | safe }}
+                    </span>
+                </div>
+                <!-- news content  -->
+                {% endfor %}
+            </div>
+            <!-- news  -->
+        </div>
+    </section>

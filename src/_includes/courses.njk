@@ -1,0 +1,79 @@
+    <section data-main-section="courses" id="courses" class="our-courses container">
+        <!-- page topic  -->
+        <div class="page-topic-container">
+            <h3 class="page-topic" data-key-text="courses.title">
+                {% for item1 in collections.navigations %}{{ item1.data.ourCourses.en }}{% endfor %}
+            </h3>
+        </div>
+        <!-- page topic  -->
+        <div class="courses">
+            {% for item in collections.courses %}
+            <!-- course  -->
+            <div data-lazy-load class="course {{ item.data.courseClass }}">
+                <div class="course-topic-container">
+                    <h3 class="course-topic" data-key-text="courses.data.{{ loop.index0 }}.title">
+                        {{ item.data.topic.en }}
+                    </h3>
+                </div>
+                <div class="course-description-container">
+                    <p class="course-description" data-key-text="courses.data.{{ loop.index0 }}.content">
+                        {{ item.data.description.en }}
+                    </p>
+                </div>
+                <div class="course-details">
+                    <div class="course-detail">
+                        <div class="course-detail-name-container">
+                            <p class="course-detail-name" data-key-text="courses.age">
+                                {% for item1 in collections.navigations %}{{ item1.data.ageGroup.en }}{% endfor %}:
+                            </p>
+                        </div>
+                        <div class="course-detail-value-container">
+                            <p class="course-detail-value" data-key-text="courses.data.{{ loop.index0 }}.age">
+                                {{ item.data.ageGroup.en }}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="course-detail">
+                        <div class="course-detail-name-container">
+                            <p class="course-detail-name" data-key-text="courses.time">
+                                {% for item1 in collections.navigations %}{{ item1.data.time.en }}{% endfor %}:
+                            </p>
+                        </div>
+                        <div class="course-detail-value-container">
+                            <p class="course-detail-value"><a href="./class-timetable/" target="_blank" class="timetable-link-sm"
+                                    data-key-text="courses.timetable">
+                                    {% for item1 in collections.navigations %}{{ item1.data.timetable.en }}{% endfor %}
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="course-detail">
+                        <div class="course-detail-name-container">
+                            <p class="course-detail-name" data-key-text="courses.price">
+                                {% for item1 in collections.navigations %}{{ item1.data.price.en }}{% endfor %}:
+                            </p>
+                        </div>
+                        <div class="course-detail-value-container">
+                            <p class="course-detail-value" data-key-text="courses.data.0.price">
+                                {{ item.data.price.en }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="course-nav-arrow-container">
+                    <a href="/class-timetable" class="course-nav-arrow">
+                        <span class="material-symbols-outlined course-nav-arrow-icon">
+                            arrow_drop_down
+                        </span>
+                    </a>
+                </div> -->
+            </div>
+            <!-- course  -->
+            {% endfor %}
+        </div>
+        <div class="timetable-link-container">
+            <a href="./class-timetable/" class="timetable-link" data-key-text="courses.timetable">
+                {% for item1 in collections.navigations %}{{ item1.data.timetable.en }}{% endfor %}
+            </a>
+        </div>
+    </section>

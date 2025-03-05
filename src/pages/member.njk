@@ -1,0 +1,82 @@
+---
+pagination:
+  data: collections.team
+  size: 1
+  alias: member
+permalink: "{{  member.data.name.en | slug }}/index.html"
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Kaisei+HarunoUmi:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="../assets/images/favicon.svg" type="icon">
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <script src="https://kit.fontawesome.com/4e769e3898.js" crossorigin="anonymous"></script>
+    <script type="module" src="../assets/js/main.js" defer></script>
+    <title>Idance Studio | {{ member.data.name.en }}</title>
+</head>
+
+<body id="body">
+
+    <div id="spinner" class="spinner-container">
+        <div class="spinner"></div>
+    </div>
+    <!-- navbar  -->
+    {% set background = "true" %}
+    {% include "../_includes/nav.njk" %}
+    <!-- navbar  -->
+    <!-- main  -->
+    <main data-main-section="member-details" id="member-details" class="member-details container">
+        <!-- page topic  -->
+        <div class="page-topic-container">
+            <h3 data-key-text="team.data.{{ pagination.pageNumber }}.name" class="page-topic">{{ member.data.name.en }}</h3>
+        </div>
+        <!-- page topic  -->
+        <!-- member  -->
+        <div class="member-container">
+            <div class="member">
+                <div class="member-img-container">
+                    <!-- ----------------------------------------------------------------------- -->
+                    <!--                src="../assets/images/team/your-image-name.format"       -->
+                    <!-- ----------------------------------------------------------------------- -->
+                    <img class="member-img" src="../assets/images/team/{{ member.data.img }}" alt="{{ member.data.name.en }}">
+                </div>
+                <div class="member-position-container">
+                    <p data-key-text="team.data.{{ pagination.pageNumber }}.bio" class="member-position">{{ member.data.bio.en }}
+                    </p>
+                </div>
+                <div class="member-contacts-container">
+                    <a href="{{ member.data.facebook }}" target="_blank" class="member-contact">
+                        <i class="fa-brands fa-facebook member-social-icon"></i>
+                    </a>
+                    <a href="{{ member.data.instagram }}" target="_blank" class="member-contact">
+                        <i class="fa-brands fa-instagram member-social-icon"></i>
+                    </a>
+                    <!-- <a href="#" target="_blank" class="member-contact">
+                        <i class="fa-brands fa-youtube member-social-icon"></i>
+                    </a> -->
+                </div>
+                <div class="member-details-description-container">
+                    <p data-key-text="team.data.{{ pagination.pageNumber }}.content" class="member-details-description">
+                        {{ member.data.description.en | markdownify }}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- member  -->
+    </main>
+    <!-- main  -->
+    <!-- footer  -->
+    {% include "../_includes/footer.njk" %}
+    <!-- footer  -->
+</body>
+
+</html>

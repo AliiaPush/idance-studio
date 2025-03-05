@@ -1,0 +1,90 @@
+<footer class="footer">
+    <div class="footer-content container">
+        <div class="other">
+            <h3 data-key-text="footer.data.navigation" class="other-topic">
+                Navigation links
+            </h3>
+            <ul class="other-links">
+                <li class="other-link-item"><a class="other-link" href="/" data-key-text="navigation.data.home">
+                        {% for item in collections.navigations %}{{item.data.home[lang] | safe}}{% endfor %}
+                    </a></li>
+                <li class="other-link-item"><a class="other-link" href="/#goals" data-key-text="navigation.data.about-us">
+                        {% for item in collections.navigations %}{{item.data.aboutUs[lang] | safe}}{% endfor %}
+                    </a></li>
+                <li class="other-link-item"><a class="other-link" href="/#courses" data-key-text="navigation.data.our-courses">
+                        {% for item in collections.navigations %}{{item.data.ourCourses[lang] | safe}}{% endfor %}
+                    </a></li>
+                <li class="other-link-item"><a class="other-link" href="/#team" data-key-text="navigation.data.our-team">
+                        {% for item in collections.navigations %}{{item.data.ourTeam[lang] | safe}}{% endfor %}
+                    </a></li>
+                <li class="other-link-item"><a class="other-link" href="/#news" data-key-text="navigation.data.news">
+                        {% for item in collections.navigations %}{{item.data.news[lang] | safe}}{% endfor %}
+                    </a></li>
+                <li class="other-link-item"><a class="other-link" href="/#contact" data-key-text="navigation.data.contact-us">
+                        {% for item in collections.navigations %}{{item.data.contactUs[lang] | safe}}{% endfor %}
+                    </a></li>
+                <li class="other-link-item"><a class="other-link" href="/class-registration" data-key-text="navigation.data.class-registration">
+                        {% for item in collections.navigations %}{{item.data.classRegistration[lang] | safe}}{% endfor %}
+                    </a></li>
+            </ul>
+        </div>
+        <div class="other">
+            <h3 data-key-text="footer.data.other" class="other-topic">
+                {% for item in collections.navigations %}{{item.data.other[lang] | safe}}{% endfor %}
+            </h3>
+            <ul class="other-links">
+                <li class="other-link-item"><a class="other-link" href="/privacy-and-policy" data-key-text="navigation.data.privacy-policy">
+                        {% for item in collections.navigations %}{{item.data.privacyPolicy[lang] | safe}}{% endfor %}
+                    </a></li>
+                <li class="other-link-item"><a class="other-link" href="/legal-notice" data-key-text="navigation.data.legal">
+                        {% for item in collections.navigations %}{{item.data.legal[lang] | safe}}{% endfor %}
+                    </a></li>
+            </ul>
+        </div>
+        <div class="contacts">
+            <h3 data-key-text="footer.data.connect" class="contacts-topic">
+                {% for item in collections.navigations %}{{item.data.connect[lang] | safe}}{% endfor %}
+            </h3>
+            <ul class="contacts-links">
+                <li class="contacts-link-item">
+                    <span data-key-text="navigation.data.email" class="material-symbols-outlined contacts-icon">
+                        {% for item in collections.navigations %}{{item.data.email[lang] | safe}}{% endfor %}
+                    </span>
+                    {% for item in collections.footer %}{{item.data.email | safe}}{% endfor %}
+                </li>
+                <li class="contacts-link-item">
+                    <span class="material-symbols-outlined contacts-icon">
+                        call
+                    </span>
+                    {% for item in collections.footer %}{{item.data.phone | safe}}{% endfor %} 
+                    &#40;<span data-key-text="footer.data.whatsapp">{% for item in collections.navigations %}{{item.data.whatsapp[lang] | safe}}{% endfor %}</span>&#41;
+                </li>
+                <!-- <li class="contacts-link-item contacts-link-item-address">
+                        <span class="material-symbols-outlined contacts-icon">
+                            location_on
+                        </span>
+                        <div class="contacts-address">
+                            <p class="contacts-address-text">No.185,</p>
+                            <p class="contacts-address-text">Adress Line 1,</p>
+                            <p class="contacts-address-text">Adress Line 2.</p>
+                        </div>
+                    </li> -->
+                <li class="contacts-link-item">
+                    <a class="contacts-link" href="https://www.facebook.com/idancestudio.de">
+                        <i class="fa-brands fa-facebook contacts-icon"></i>
+                        {% for item in collections.footer %}{{item.data.facebookName | safe}}{% endfor %}
+                    </a>
+                </li>
+                <li class="contacts-link-item">
+                    <a class="contacts-link" href="https://www.instagram.com/idancestudio.de/">
+                        <i class="fa-brands fa-instagram contacts-icon"></i>
+                        {% for item in collections.footer %}{{item.data.instagramName | safe}}{% endfor %}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright container">
+        <p class="copyright-text">Copyright &copy; {% for item in collections.footer %}{{item.data.copyriteYear | safe}}{% endfor %} {% for item in collections.footer %}{{item.data.owner | safe}}{% endfor %}. All rights reserved</p>
+    </div>
+</footer>

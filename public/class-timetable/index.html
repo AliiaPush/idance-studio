@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Kaisei+HarunoUmi:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="../assets/images/favicon.svg" type="icon">
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <script src="https://kit.fontawesome.com/4e769e3898.js" crossorigin="anonymous"></script>
+    <script type="module" src="../assets/js/main.js" defer></script>
+    <title>Idance Studio | Timetable</title>
+</head>
+
+<body id="body">
+
+    <div id="spinner" class="spinner-container">
+        <div class="spinner"></div>
+    </div>
+    <!-- navbar  -->
+    
+    <nav id="navbar" class="navbar navbar-absolute regular-transition navbar-purple">
+    <div class=" navbar-container">
+        <!-- logo  -->
+        <div class="navbar-logo-container">
+            <a href="/" class="navbar-logo-link">
+                <img src="/assets/images/logo.svg" alt="Tanzstudio Logo" class="navbar-logo">
+            </a>
+        </div>
+        <!-- logo  -->
+        <!-- hamburger icon  -->
+        <div class="navbar-hamburger-icon-container">
+            <div id="navbar-hamburger-btn" class="navbar-hamburger-icon">
+                <div class="navbar-hamburger-icon-bar"></div>
+                <div id="navbar-hamburger-icon-middle-bar" class="navbar-hamburger-icon-bar">
+                </div>
+                <div class="navbar-hamburger-icon-bar"></div>
+            </div>
+        </div>
+        <!-- hamburger icon  -->
+        <!-- side menu  -->
+        <div id="navbar-side-menu-backdrop" class="navbar-side-menu-container-bg"></div>
+        <div id="navbar-side-menu" class="navbar-side-menu-container height-limit">
+            <div class="nav-links-container">
+                <!-- nav link  -->
+                <div class="lang-toggler-container">
+                    <button data-lang-toggler="en" class="lang-toggler regular-transition">English</button>
+                    <button data-lang-toggler="de" class="lang-toggler regular-transition">Deutsch</button>
+                </div>
+                <!-- nav link  -->
+                <!-- nav link  -->
+                <div class="nav-link-container">
+                    <a data-nav-link="#home" href="/#home" class="nav-link active-nav-link" data-key-text="navigation.data.home">
+                        Home
+                    </a>
+                </div>
+                <!-- nav link  -->
+                <!-- nav link  -->
+                <div class="nav-link-container">
+                    <a data-nav-link="#goals" href="/#goals" class="nav-link" data-key-text="navigation.data.about-us">
+                        About us
+                    </a>
+                </div>
+                <!-- nav link  -->
+                <!-- nav link  -->
+                <div class="nav-link-container">
+                    <a data-nav-link="#courses" href="/#courses" class="nav-link" data-key-text="navigation.data.our-courses">
+                        Our courses
+                    </a>
+                </div>
+                <!-- nav link  -->
+                <!-- nav link  -->
+                <div class="nav-link-container">
+                    <a data-nav-link="#team" href="/#team" class="nav-link" data-key-text="navigation.data.our-team">
+                        Our team
+                    </a>
+                </div>
+                <!-- nav link  -->
+                <!-- nav link  -->
+                <div class="nav-link-container">
+                    <a data-nav-link="#news" href="/#news" class="nav-link" data-key-text="navigation.data.news">
+                        News
+                    </a>
+                </div>
+                <!-- nav link  -->
+                <!-- nav link  -->
+                <div class="nav-link-container">
+                    <a data-nav-link="#contact" href="/#contact" class="nav-link" data-key-text="navigation.data.contact-us">
+                        contact us
+                    </a>
+                </div>
+                <!-- nav link  -->
+                <!-- nav link  -->
+                <div class="nav-link-container">
+                    <a data-nav-link="class-registration" href="/class-registration" class="nav-link"
+                        data-key-text="navigation.data.class-registration">
+                        Class registration
+                    </a>
+                </div>
+                <!-- nav link  -->
+            </div>
+
+        </div>
+        <!-- side menu  -->
+    </div>
+</nav>
+    <!-- navbar  -->
+    <!-- alert -->
+    <div id="alert" class="alert">
+        <!-- success  -->
+        <div id="alert-success" class="alert-text-box">
+            <i class="fa-regular fa-circle-check alert-text-icon"></i>
+            <p data-alert-text="success" class="alert-text">This is a sample alert</p>
+        </div>
+        <!-- success -->
+        <!-- error  -->
+        <div id="alert-error" class="alert-text-box">
+            <i class="fa-regular fa-circle-xmark alert-text-icon"></i>
+            <p data-alert-text="error" class="alert-text">This is a sample alert</p>
+        </div>
+        <!-- error -->
+        <button id="alert-close-btn" class="alert-close-btn">
+            <i class="fa-solid fa-xmark alert-close-icon"></i>
+        </button>
+    </div>
+    <!-- alert  -->
+    <!-- main  -->
+    <main data-main-section="class-timetable" id="class-timetable" class="class-timetable container">
+        <!-- page topic  -->
+        <div class="page-topic-container">
+            <h3 data-key-text="timetable.title" class="page-topic">
+                Timetable
+            </h3>
+        </div>
+        <!-- page topic  -->
+        
+            <!-- table  -->
+        <div class="table-container">
+            <h3 data-key-text="timetable.data.3.title" class="table-date">
+                Wednesday
+            </h3>
+            <h4 data-key-text="timetable.data.3.address" class="table-address">
+                WINDISCHESCHENBACH (WINTERLING-PORZELLAN-STRAßE 25)
+            </h4>
+            <table class="table">
+                <thead class="table-head">
+                    <tr class="table-row">
+                        <td class="table-data">
+                            <div class="table-data-container">
+                                <p data-key-text="timetable.time" data-lang="en" class="table-data-description">
+                                    Time
+                                </p>
+                            </div>
+                        </td>
+                        <td class="table-data">
+                            <div class="table-data-container">
+                                <p data-key-text="timetable.description" class="table-data-description">
+                                    Description
+                                </p>
+                            </div>
+                        </td>
+                        <!-- <td class="table-data">
+                            <div class="table-data-container">
+                                <p data-key-text="timetable.head.location" class="table-data-description">Location</p>
+                            </div>
+                        </td> -->
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                    
+                    <!-- row  -->
+                    <tr class="table-row">
+                        <td class="table-data">
+                            <p class="table-data-description" data-key-text="timetable.data.3.rows.0.time">
+                                15.00 - 15.45
+                            </p>
+                        </td>
+                        <td class="table-data">
+                            <p data-key-text="timetable.data.3.rows.0.description" class="table-data-description">
+                                [object Object]
+                            </p>
+                        </td>
+                    </tr>
+                    <!-- row  -->
+                    
+                    <!-- row  -->
+                    <tr class="table-row">
+                        <td class="table-data">
+                            <p class="table-data-description" data-key-text="timetable.data.3.rows.1.time">
+                                16.00 - 17.00
+                            </p>
+                        </td>
+                        <td class="table-data">
+                            <p data-key-text="timetable.data.3.rows.1.description" class="table-data-description">
+                                [object Object]
+                            </p>
+                        </td>
+                    </tr>
+                    <!-- row  -->
+                    
+                    <!-- row  -->
+                    <tr class="table-row">
+                        <td class="table-data">
+                            <p class="table-data-description" data-key-text="timetable.data.3.rows.2.time">
+                                17.00 - 18.00
+                            </p>
+                        </td>
+                        <td class="table-data">
+                            <p data-key-text="timetable.data.3.rows.2.description" class="table-data-description">
+                                [object Object]
+                            </p>
+                        </td>
+                    </tr>
+                    <!-- row  -->
+                    
+                    <!-- row  -->
+                    <tr class="table-row">
+                        <td class="table-data">
+                            <p class="table-data-description" data-key-text="timetable.data.3.rows.3.time">
+                                18.00 – 19.00
+                            </p>
+                        </td>
+                        <td class="table-data">
+                            <p data-key-text="timetable.data.3.rows.3.description" class="table-data-description">
+                                [object Object]
+                            </p>
+                        </td>
+                    </tr>
+                    <!-- row  -->
+                    
+                </tbody>
+
+            </table>
+        </div>
+        <!-- table  -->
+        
+            <!-- table  -->
+        <div class="table-container">
+            <h3 data-key-text="timetable.data.4.title" class="table-date">
+                Thursday
+            </h3>
+            <h4 data-key-text="timetable.data.4.address" class="table-address">
+                ERBENDORF (FRÜHMEßGASSE 15 - SPORTHALLE)
+            </h4>
+            <table class="table">
+                <thead class="table-head">
+                    <tr class="table-row">
+                        <td class="table-data">
+                            <div class="table-data-container">
+                                <p data-key-text="timetable.time" data-lang="en" class="table-data-description">
+                                    Time
+                                </p>
+                            </div>
+                        </td>
+                        <td class="table-data">
+                            <div class="table-data-container">
+                                <p data-key-text="timetable.description" class="table-data-description">
+                                    Description
+                                </p>
+                            </div>
+                        </td>
+                        <!-- <td class="table-data">
+                            <div class="table-data-container">
+                                <p data-key-text="timetable.head.location" class="table-data-description">Location</p>
+                            </div>
+                        </td> -->
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                    
+                    <!-- row  -->
+                    <tr class="table-row">
+                        <td class="table-data">
+                            <p class="table-data-description" data-key-text="timetable.data.4.rows.0.time">
+                                14.00 - 14.45
+                            </p>
+                        </td>
+                        <td class="table-data">
+                            <p data-key-text="timetable.data.4.rows.0.description" class="table-data-description">
+                                [object Object]
+                            </p>
+                        </td>
+                    </tr>
+                    <!-- row  -->
+                    
+                    <!-- row  -->
+                    <tr class="table-row">
+                        <td class="table-data">
+                            <p class="table-data-description" data-key-text="timetable.data.4.rows.1.time">
+                                15.00 - 16.00
+                            </p>
+                        </td>
+                        <td class="table-data">
+                            <p data-key-text="timetable.data.4.rows.1.description" class="table-data-description">
+                                [object Object]
+                            </p>
+                        </td>
+                    </tr>
+                    <!-- row  -->
+                    
+                </tbody>
+
+            </table>
+        </div>
+        <!-- table  -->
+        
+            <!-- table  -->
+        <div class="table-container">
+            <h3 data-key-text="timetable.data.5.title" class="table-date">
+                Friday
+            </h3>
+            <h4 data-key-text="timetable.data.5.address" class="table-address">
+                STÖRNSTEIN (FLOßER STR. 25B - RATHAUS)
+            </h4>
+            <table class="table">
+                <thead class="table-head">
+                    <tr class="table-row">
+                        <td class="table-data">
+                            <div class="table-data-container">
+                                <p data-key-text="timetable.time" data-lang="en" class="table-data-description">
+                                    Time
+                                </p>
+                            </div>
+                        </td>
+                        <td class="table-data">
+                            <div class="table-data-container">
+                                <p data-key-text="timetable.description" class="table-data-description">
+                                    Description
+                                </p>
+                            </div>
+                        </td>
+                        <!-- <td class="table-data">
+                            <div class="table-data-container">
+                                <p data-key-text="timetable.head.location" class="table-data-description">Location</p>
+                            </div>
+                        </td> -->
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                    
+                    <!-- row  -->
+                    <tr class="table-row">
+                        <td class="table-data">
+                            <p class="table-data-description" data-key-text="timetable.data.5.rows.0.time">
+                                13.30 - 14.15
+                            </p>
+                        </td>
+                        <td class="table-data">
+                            <p data-key-text="timetable.data.5.rows.0.description" class="table-data-description">
+                                [object Object]
+                            </p>
+                        </td>
+                    </tr>
+                    <!-- row  -->
+                    
+                    <!-- row  -->
+                    <tr class="table-row">
+                        <td class="table-data">
+                            <p class="table-data-description" data-key-text="timetable.data.5.rows.1.time">
+                                14.15 - 15.00
+                            </p>
+                        </td>
+                        <td class="table-data">
+                            <p data-key-text="timetable.data.5.rows.1.description" class="table-data-description">
+                                [object Object]
+                            </p>
+                        </td>
+                    </tr>
+                    <!-- row  -->
+                    
+                    <!-- row  -->
+                    <tr class="table-row">
+                        <td class="table-data">
+                            <p class="table-data-description" data-key-text="timetable.data.5.rows.2.time">
+                                15.00 - 16.00
+                            </p>
+                        </td>
+                        <td class="table-data">
+                            <p data-key-text="timetable.data.5.rows.2.description" class="table-data-description">
+                                [object Object]
+                            </p>
+                        </td>
+                    </tr>
+                    <!-- row  -->
+                    
+                    <!-- row  -->
+                    <tr class="table-row">
+                        <td class="table-data">
+                            <p class="table-data-description" data-key-text="timetable.data.5.rows.3.time">
+                                16.00 - 17.00
+                            </p>
+                        </td>
+                        <td class="table-data">
+                            <p data-key-text="timetable.data.5.rows.3.description" class="table-data-description">
+                                [object Object]
+                            </p>
+                        </td>
+                    </tr>
+                    <!-- row  -->
+                    
+                    <!-- row  -->
+                    <tr class="table-row">
+                        <td class="table-data">
+                            <p class="table-data-description" data-key-text="timetable.data.5.rows.4.time">
+                                17.00 - 18.00
+                            </p>
+                        </td>
+                        <td class="table-data">
+                            <p data-key-text="timetable.data.5.rows.4.description" class="table-data-description">
+                                [object Object]
+                            </p>
+                        </td>
+                    </tr>
+                    <!-- row  -->
+                    
+                </tbody>
+
+            </table>
+        </div>
+        <!-- table  -->
+        
+    </main>
+    <!-- main  -->
+    <!-- footer  -->
+    <footer class="footer">
+    <div class="footer-content container">
+        <div class="other">
+            <h3 data-key-text="footer.data.navigation" class="other-topic">
+                Navigation links
+            </h3>
+            <ul class="other-links">
+                <li class="other-link-item"><a class="other-link" href="/" data-key-text="navigation.data.home">
+                        
+                    </a></li>
+                <li class="other-link-item"><a class="other-link" href="/#goals" data-key-text="navigation.data.about-us">
+                        
+                    </a></li>
+                <li class="other-link-item"><a class="other-link" href="/#courses" data-key-text="navigation.data.our-courses">
+                        
+                    </a></li>
+                <li class="other-link-item"><a class="other-link" href="/#team" data-key-text="navigation.data.our-team">
+                        
+                    </a></li>
+                <li class="other-link-item"><a class="other-link" href="/#news" data-key-text="navigation.data.news">
+                        
+                    </a></li>
+                <li class="other-link-item"><a class="other-link" href="/#contact" data-key-text="navigation.data.contact-us">
+                        
+                    </a></li>
+                <li class="other-link-item"><a class="other-link" href="/class-registration" data-key-text="navigation.data.class-registration">
+                        
+                    </a></li>
+            </ul>
+        </div>
+        <div class="other">
+            <h3 data-key-text="footer.data.other" class="other-topic">
+                
+            </h3>
+            <ul class="other-links">
+                <li class="other-link-item"><a class="other-link" href="/privacy-and-policy" data-key-text="navigation.data.privacy-policy">
+                        
+                    </a></li>
+                <li class="other-link-item"><a class="other-link" href="/legal-notice" data-key-text="navigation.data.legal">
+                        
+                    </a></li>
+            </ul>
+        </div>
+        <div class="contacts">
+            <h3 data-key-text="footer.data.connect" class="contacts-topic">
+                
+            </h3>
+            <ul class="contacts-links">
+                <li class="contacts-link-item">
+                    <span data-key-text="navigation.data.email" class="material-symbols-outlined contacts-icon">
+                        
+                    </span>
+                    idancestudio.deutschland@gmail.com
+                </li>
+                <li class="contacts-link-item">
+                    <span class="material-symbols-outlined contacts-icon">
+                        call
+                    </span>
+                    01788248987 
+                    &#40;<span data-key-text="footer.data.whatsapp"></span>&#41;
+                </li>
+                <!-- <li class="contacts-link-item contacts-link-item-address">
+                        <span class="material-symbols-outlined contacts-icon">
+                            location_on
+                        </span>
+                        <div class="contacts-address">
+                            <p class="contacts-address-text">No.185,</p>
+                            <p class="contacts-address-text">Adress Line 1,</p>
+                            <p class="contacts-address-text">Adress Line 2.</p>
+                        </div>
+                    </li> -->
+                <li class="contacts-link-item">
+                    <a class="contacts-link" href="https://www.facebook.com/idancestudio.de">
+                        <i class="fa-brands fa-facebook contacts-icon"></i>
+                        Idance Tanzstudio
+                    </a>
+                </li>
+                <li class="contacts-link-item">
+                    <a class="contacts-link" href="https://www.instagram.com/idancestudio.de/">
+                        <i class="fa-brands fa-instagram contacts-icon"></i>
+                        Idance Tanzstudio
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright container">
+        <p class="copyright-text">Copyright &copy; 2025 Idance Studio. All rights reserved</p>
+    </div>
+</footer>
+    <!-- footer  -->
+</body>
+
+</html>

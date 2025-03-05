@@ -1,0 +1,16 @@
+<header data-main-section="home" id="home" class="header height-limit">
+  {% for item in collections.header %}
+  <div class="header-texts-container">
+    <div class="header-topic-container">
+      <h1 class="header-topic" data-key-text="header.data.topic">{{ item.data.topic.en }}</h1>
+    </div>
+    <div class="header-sub-topic-container">
+      <h3 class="header-sub-topic" data-key-text="header.data.motto">
+        {{ item.data.motto.en }}
+      </h3>
+    </div>
+  </div>
+  <a href="/class-registration" class="header-btn regular-transition" data-key-text="header.data.action">{{ item.data.callToAction.en }}</a>
+  <!-- <img class="header-img" src="./assets/images/header/header-bg.jpg" alt=""> -->
+  {% endfor %}
+</header>

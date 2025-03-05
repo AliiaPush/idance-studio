@@ -1,0 +1,106 @@
+<section data-main-section="contact" id="contact" class="contact-us container">
+        <!-- page topic  -->
+        <div class="page-topic-container">
+            <h3 class="page-topic" data-key-text="contact.title">
+                {% for item1 in collections.navigations %}{{ item1.data.contactUs.en }}{% endfor %}
+            </h3>
+        </div>
+        <!-- page topic  -->
+        {% for item in collections.contact %}
+        <div data-lazy-load class="form">
+            <div class="form-items">
+                <!-- form item  -->
+                <div class="form-item form-item-half">
+                    <div class="form-input-label-container">
+                        <label for="name" class="form-input-label" data-key-text="contact.data.name.title">
+                            {{ item.data.name.title.en }}
+                        </label>
+                    </div>
+                    <div class="form-input-container">
+                        <input data-key-input="contact.data.name.placeholder" id="name" type="text" class="form-input"
+                            placeholder="{{ item.data.name.placeholder.en }}">
+                    </div>
+                </div>
+                <!-- form item  -->
+                <!-- form item  -->
+                <div class="form-item form-item-half">
+                    <div class="form-input-label-container">
+                        <p for="topic" class="form-input-label" data-key-text="contact.data.topic.title">
+                            {{ item.data.topic.title.en }}
+                        </p>
+                    </div>
+                    <div class="form-input-container">
+                        <!-- selector  -->
+                        <div data-selector="topic" data-selector-show="false" id="topic" class="form-select">
+                            <p id="topic-value" data-selected-value="" class="form-selected-text" data-key-text="contact.data.topic.options.0">
+                                {{ item.data.topic.placeholder.en }}
+                            </p>
+                            <div class="form-select-arrow">
+                                <span data-selector-arrow="topic" class="material-symbols-outlined form-select-arrow-icon">
+                                    expand_more
+                                </span>
+                            </div>
+                            <!-- options  -->
+                            <div data-options="topic" class="form-options">
+                                {% for option in item.data.topic.options %}
+                                <!-- option  -->
+                                <div data-option class="option-container">
+                                    <p data-option-value="{{ loop.index0 }}" class="option" data-key-option="contact.data.topic.options.{{ loop.index0 }}">
+                                        {{ option.en }}
+                                    </p>
+                                </div>
+                                <!-- option  -->
+                                {% endfor %}
+                            </div>
+                            <!-- options  -->
+                        </div>
+                        <!-- selector  -->
+                    </div>
+                </div>
+                <!-- form item  -->
+                <!-- form item  -->
+                <div class="form-item form-item-full">
+                    <div class="form-input-label-container">
+                        <label for="email" class="form-input-label" data-key-text="contact.data.email.title">
+                            {{ item.data.email.title.en }}
+                        </label>
+                    </div>
+                    <div class="form-input-container">
+                        <input data-key-input="contact.data.email.placeholder" id="email" type="email" class="form-input"
+                            placeholder="{{ item.data.email.placeholder.en }}">
+                    </div>
+                </div>
+                <!-- form item  -->
+                <!-- form item  -->
+                <div class="form-item form-item-full">
+                    <div class="form-input-label-container">
+                        <label for="subject" class="form-input-label" data-key-text="contact.data.subject.title">
+                            {{ item.data.subject.title.en }}
+                        </label>
+                    </div>
+                    <div class="form-input-container">
+                        <input data-key-input="contact.data.subject.placeholder" id="subject" type="text" class="form-input"
+                            placeholder="{{ item.data.subject.placeholder.en }}">
+                    </div>
+                </div>
+                <!-- form item  -->
+                <!-- form item  -->
+                <div class="form-item form-item-full">
+                    <div class="form-input-label-container">
+                        <label for="message" class="form-input-label" data-key-text="contact.data.message.title">
+                            {{ item.data.message.title.en }}
+                        </label>
+                    </div>
+                    <div class="form-input-container">
+                        <textarea data-key-input="contact.data.message.placeholder" id="message" type="text" rows="10" class="form-input"
+                            placeholder="{{ item.data.message.placeholder.en }}"></textarea>
+                    </div>
+                </div>
+                <!-- form item  -->
+            </div>
+            <button id="send" class="form-send-btn" data-key-text="contact.data.send.title">
+                {% for item1 in collections.navigations %}{{ item1.data.send.en }}{% endfor %}
+            </button>
+        </div>
+        {% endfor %}
+    </section>

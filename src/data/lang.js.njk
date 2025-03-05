@@ -1,0 +1,198 @@
+---
+permalink: "/assets/js/lang.js"
+layout: null
+---
+const lang = {
+    {% set languages = ["en", "de"] %}{% for lang in languages %}
+"{{ lang }}": {
+        "navigation": {
+            "title": "{% for item in collections.navigations %}{{item.data.title[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
+            "data": {
+                "home": "{% for item in collections.navigations %}{{item.data.home[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
+                "about-us": "{% for item in collections.navigations %}{{item.data.aboutUs[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
+                "our-courses": "{% for item in collections.navigations %}{{item.data.ourCourses[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
+                "our-team": "{% for item in collections.navigations %}{{item.data.ourTeam[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
+                "news": "{% for item in collections.navigations %}{{item.data.news[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
+                "contact-us": "{% for item in collections.navigations %}{{item.data.contactUs[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
+                "class-registration": "{% for item in collections.navigations %}{{item.data.classRegistration[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
+                "privacy-policy": "{% for item in collections.navigations %}{{item.data.privacyPolicy[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
+                "legal": "{% for item in collections.navigations %}{{item.data.legal[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
+                "email": "{% for item in collections.navigations %}{{item.data.email[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
+            }
+        },
+        "header": {
+            "title": "{% for item in collections.navigations %}{{item.data.header[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
+            "data": {
+                {% for item in collections.header %}
+                "topic":"{{item.data.topic[lang] | safe}}",
+                "motto":"{{item.data.motto[lang] | safe}}",
+                "action":"{{item.data.callToAction[lang] | safe}}"
+                {% if not loop.last %},{% endif %}{% endfor %}
+            }
+        },
+        "about": {
+            "title":"{% for item in collections.navigations %}{{item.data.aboutUs[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
+            "data":{
+                {% for item in collections.about %}
+                {{ loop.index0 }}:{
+                    "title":"{{item.data.topic[lang] | safe}}",
+                    "content":`{{item.data.description[lang] | markdownify | safe}}`
+                }
+                {% if not loop.last %},{% endif %}{% endfor %}
+            }
+        },
+        "courses": {
+            "title":"{% for item in collections.navigations %}{{item.data.ourCourses[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
+            "age": "{% for item in collections.navigations %}{{item.data.ageGroup[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
+            "time": "{% for item in collections.navigations %}{{item.data.time[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
+            "price": "{% for item in collections.navigations %}{{item.data.price[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
+            "timetable": "{% for item in collections.navigations %}{{item.data.timetable[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
+            "data": {
+                {% for item in collections.courses %}
+                {{ loop.index0 }}:{
+                    "title":"{{item.data.topic[lang] | safe}}",
+                    "content":`{{item.data.description[lang] | markdownify | safe}}`,
+                    "age": "{{item.data.ageGroup[lang] | safe}}",
+                    "price": "{{item.data.price[lang] | safe}}"
+
+                }
+                {% if not loop.last %},{% endif %}{% endfor %}
+            }
+        },
+        "team": {
+            "title":"{% for item in collections.navigations %}{{item.data.ourTeam[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
+            "data": {
+                {% for item in collections.team %}
+                {{ loop.index0 }}:{
+                    "name":"{{item.data.name[lang] | safe}}",
+                    "bio": "{{item.data.bio[lang] | safe}}",
+                    "content":`{{item.data.description[lang] | markdownify | safe}}`
+                }
+                {% if not loop.last %},{% endif %}{% endfor %}
+            }
+        },
+        "news": {
+            "title":"{% for item in collections.navigations %}{{item.data.news[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
+            "data": {
+                {% for item in collections.news %}
+                {{ loop.index0 }}:{
+                    "title":"{{item.data.title[lang] | safe}}",
+                    "content":`{{item.data.description[lang] | markdownify | safe}}`
+                }
+                {% if not loop.last %},{% endif %}{% endfor %}
+            }
+        },
+        "contact": {
+            "title":"{% for item in collections.navigations %}{{item.data.contactUs[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
+            "data": {
+                {% for item in collections.contact %}
+                "name": {
+                    "title": "{{item.data.name.title[lang] | safe}}",
+                    "placeholder": "{{item.data.name.placeholder[lang] | safe}}"
+                },
+                "topic": {
+                    "title": "{{item.data.topic.title[lang] | safe}}",
+                    "options": {
+                        {% for option in item.data.topic.options %}
+                        "{{ loop.index0 }}": "{{option[lang] | safe}}"
+                        {% if not loop.last %},{% endif %}{% endfor %}
+                    }
+                },
+                "email": {
+                    "title": "{{item.data.email.title[lang] | safe}}",
+                    "placeholder": "{{item.data.email.placeholder[lang] | safe}}"
+                },
+                "subject": {
+                    "title": "{{item.data.subject.title[lang] | safe}}",
+                    "placeholder": "{{item.data.subject.placeholder[lang] | safe}}"
+                },
+                "message": {
+                    "title": "{{item.data.message.title[lang] | safe}}",
+                    "placeholder": "{{item.data.message.placeholder[lang] | safe}}"
+                },
+                "send": {
+                    "title": "{% for item in collections.navigations %}{{item.data.send[lang] | safe}}{% endfor %}"
+                }
+                {% if not loop.last %},{% endif %}{% endfor %}
+            }
+        },
+        "register": {
+            "title": "{% for item in collections.navigations %}{{item.data.classRegistration[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
+            "data": {
+                {% for item in collections.register %}
+                "first-name": {
+                    "title": "{{item.data.firstName.title[lang] | safe}}",
+                    "placeholder": "{{item.data.firstName.placeholder[lang] | safe}}"
+                },
+                "last-name": {
+                    "title": "{{item.data.lastName.title[lang] | safe}}",
+                    "placeholder": "{{item.data.lastName.placeholder[lang] | safe}}"
+                },
+                "category": {
+                    "title": "{{item.data.category.title[lang] | safe}}",
+                    "options": {
+                        {% for option in item.data.category.options %}
+                        "{{ loop.index0 }}": "{{option[lang] | safe}}"
+                        {% if not loop.last %},{% endif %}{% endfor %}
+                    }
+                },
+                "mobile": {
+                    "title": "{{item.data.mobile.title[lang] | safe}}",
+                    "placeholder": "{{item.data.mobile.placeholder[lang] | safe}}"
+                },
+                "email": {
+                    "title": "{{item.data.email.title[lang] | safe}}",
+                    "placeholder": "{{item.data.email.placeholder[lang] | safe}}"
+                },
+                "details": {
+                    "title": "{{item.data.details.title[lang] | safe}}",
+                    "placeholder": "{{item.data.details.placeholder[lang] | safe}}"
+                },
+                "send": {
+                    "title": "{% for item in collections.navigations %}{{item.data.send[lang] | safe}}{% endfor %}"
+                }
+                {% endfor %}
+            }
+        },
+        "timetable": {
+            "title": "{% for item in collections.navigations %}{{item.data.timetable[lang] | safe}}{% endfor %}",
+            "time": "{% for item in collections.navigations %}{{item.data.time[lang] | safe}}{% endfor %}",
+            "description": "{% for item in collections.navigations %}{{item.data.description[lang] | safe}}{% endfor %}",
+            "data": {
+                {% for item in collections.timetable %}
+                {{ item.data.dayNo }}: {
+                    "title": "{{item.data.title[lang] | safe}}",
+                    "address": "{{item.data.location[lang] | safe}}",
+                    "rows": {
+                        {% for class in item.data.classes %}
+                        "{{ loop.index0 }}": {
+                            "time": "{{ class.time }}",
+                            "description": "{{ class.description[lang] }}",
+                            "location": "{{ class.location[lang] }}"
+                        }
+                        {% if not loop.last %},{% endif %}{% endfor %}
+                    }
+                }
+                {% if not loop.last %},{% endif %}{% endfor %}
+            }
+        },
+        "privacy": {
+            "title": "{% for item in collections.navigations %}{{item.data.privacyPolicy[lang] | safe}}{% endfor %}"
+        },
+        "legal": {
+            "title": "{% for item in collections.navigations %}{{item.data.legal[lang] | safe}}{% endfor %}"
+        },
+        "footer": {
+            "title": "{% for item in collections.navigations %}{{item.data.footer[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
+            "data": {
+                "navigation": "{% for item in collections.navigations %}{{item.data.navigationLinks[lang] | safe}}{% endfor %}",
+                "other": "{% for item in collections.navigations %}{{item.data.other[lang] | safe}}{% endfor %}",
+                "connect": "{% for item in collections.navigations %}{{item.data.connect[lang] | safe}}{% endfor %}",
+                "whatsapp": "{% for item in collections.navigations %}{{item.data.whatsapp[lang] | safe}}{% endfor %}"
+            }
+        }
+    }
+    {% if not loop.last %}, {% endif %}{% endfor %}
+}
+
+export default lang;
