@@ -29,3 +29,17 @@ collections:
       - { label: "Motto (DE)", name: "motto.de", widget: "string" }
       - { label: "Call to action (EN)", name: "callToAction.en", widget: "string" }
       - { label: "Call to action (DE)", name: "callToAction.de", widget: "string" }
+  - name: "goals"
+    label: "Goals"
+    folder: "/src/data/about"
+    create: false
+    delete: false
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Topic (EN)", name: "topic.en", widget: "string" }
+      - { label: "Topic (DE)", name: "topic.de", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Description (EN)", name: "description.en", widget: "markdown" }
+      - { label: "Description (DE)", name: "description.de", widget: "markdown" }
+      - { label: "Call to action (EN)", name: "callToAction.en", widget: "string" }
+      - { label: "Call to action (DE)", name: "callToAction.de", widget: "string" }
