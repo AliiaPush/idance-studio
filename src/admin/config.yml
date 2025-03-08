@@ -18,8 +18,9 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "header"
     label: "Header"
-    folder: "src/data/header"
+    folder: "/src/data/header"
     create: false
+    delete: false
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Topic (EN)", name: "topic.en", widget: "string" }
