@@ -45,3 +45,73 @@ collections:
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Description (EN)", name: "description.en", widget: "markdown" }
       - { label: "Description (DE)", name: "description.de", widget: "markdown" }
+  - name: "courses"
+    label: "Courses"
+    folder: "/src/data/courses"
+    create: false
+    delete: false
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Topic (EN)", name: "topic.en", widget: "string" }
+      - { label: "Topic (DE)", name: "topic.de", widget: "string" }
+      - { label: "Age group (EN)", name: "ageGroup.en", widget: "string" }
+      - { label: "Age group (DE)", name: "ageGroup.de", widget: "string" }
+      - { label: "Price (EN)", name: "price.en", widget: "string" }
+      - { label: "Price (DE)", name: "price.de", widget: "string" }
+      - { label: "Description (EN)", name: "description.en", widget: "markdown" }
+      - { label: "Description (DE)", name: "description.de", widget: "markdown" }
+  - name: "team"
+    label: "Team"
+    folder: "/src/data/team"
+    create: false
+    delete: false
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    media_folder: "public/assets/images/team" # Media files for this collection
+    public_folder: "/assets/images/team" # Public URL for media files
+    fields:
+      - { label: "Name (EN)", name: "name.en", widget: "string" }
+      - { label: "Name (DE)", name: "name.de", widget: "string" }
+      - { label: "Image", name: "img", widget: "image" }
+      - { label: "Facebook", name: "facebook", widget: "string" }
+      - { label: "Instagram", name: "instagram", widget: "string" }
+      - { label: "Bio (EN)", name: "bio.en", widget: "string" }
+      - { label: "Bio (DE)", name: "bio.de", widget: "string" }
+      - { label: "Description (EN)", name: "description.en", widget: "markdown" }
+      - { label: "Description (DE)", name: "description.de", widget: "markdown" }
+  - name: "news"
+    label: "News"
+    folder: "/src/data/news"
+    create: true
+    delete: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    media_folder: "public/assets/images/news" # Media files for this collection
+    public_folder: "/assets/images/news" # Public URL for media files
+    fields:
+      - { label: "Title (EN)", name: "title.en", widget: "string" }
+      - { label: "Title (DE)", name: "title.de", widget: "string" }
+      - { label: "Image", name: "img", widget: "image" }
+      - { label: "Description (EN)", name: "description.en", widget: "markdown" }
+      - { label: "Description (DE)", name: "description.de", widget: "markdown" }
+  - name: "timetable"
+    label: "Timetable"
+    folder: "/src/data/timetable"
+    create: true
+    delete: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Day (EN)", name: "title.en", widget: "string" }
+      - { label: "Day (DE)", name: "title.de", widget: "string" }
+      - { label: "Day no", name: "dayNo", widget: "string" }
+      - { label: "Location (EN)", name: "location.en", widget: "string" }
+      - { label: "Location (DE)", name: "location.de", widget: "string" }
+      - {
+          label: "Classes",
+          name: "classes",
+          widget: "list",
+          fields:
+            [
+              { label: "Time", name: "time", widget: "string" },
+              { label: "Description (EN)", name: "description.en", widget: "string" },
+              { label: "Description (DE)", name: "description.de", widget: "string" },
+            ],
+        }

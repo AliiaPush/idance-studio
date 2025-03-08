@@ -7,6 +7,7 @@ description:
   en: |
     We cordially invite you to participate in the exciting events happening in the coming months. Make sure to mark these important dates in your calendar:
 
+
   
     - On June 16th, enjoy the Garden Festival in Erbendorf.
 
