@@ -16,3 +16,15 @@ collections:
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Rating (scale of 1-5)", name: "rating", widget: "number" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "header"
+    label: "Header"
+    folder: "src/data/header"
+    create: false
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Topic (EN)", name: "topic.en", widget: "string" }
+      - { label: "Topic (DE)", name: "topic.de", widget: "string" }
+      - { label: "Motto (EN)", name: "motto.en", widget: "string" }
+      - { label: "Motto (DE)", name: "motto.de", widget: "string" }
+      - { label: "Call to action (EN)", name: "callToAction.en", widget: "string" }
+      - { label: "Call to action (DE)", name: "callToAction.de", widget: "string" }
