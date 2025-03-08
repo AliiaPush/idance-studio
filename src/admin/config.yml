@@ -22,6 +22,8 @@ collections:
     create: false
     delete: false
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    media_folder: "public/assets/images/header" # Media files for this collection
+    public_folder: "/assets/images/header" # Public URL for media files
     fields:
       - { label: "Topic (EN)", name: "topic.en", widget: "string" }
       - { label: "Topic (DE)", name: "topic.de", widget: "string" }
@@ -35,6 +37,8 @@ collections:
     create: false
     delete: false
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    media_folder: "public/assets/images/goals" # Media files for this collection
+    public_folder: "/assets/images/goals" # Public URL for media files
     fields:
       - { label: "Topic (EN)", name: "topic.en", widget: "string" }
       - { label: "Topic (DE)", name: "topic.de", widget: "string" }
