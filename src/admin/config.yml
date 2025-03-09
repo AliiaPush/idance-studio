@@ -51,6 +51,7 @@ collections:
     create: false
     delete: false
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: "topic.en"
     media_folder: "public/assets/images/goals"
     public_folder: "/assets/images/goals"
     fields:
@@ -74,6 +75,7 @@ collections:
     create: false
     delete: false
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: "topic.en"
     fields:
       - label: "Topic"
         name: "topic"
@@ -106,6 +108,7 @@ collections:
     create: false
     delete: false
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: "name.en"
     media_folder: "public/assets/images/team"
     public_folder: "/assets/images/team"
     fields:
@@ -137,6 +140,7 @@ collections:
     create: true
     delete: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: "title.en"
     media_folder: "public/assets/images/news"
     public_folder: "/assets/images/news"
     fields:
@@ -160,6 +164,7 @@ collections:
     create: true
     delete: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: "title.en"
     fields:
       - label: "Day"
         name: "title"
