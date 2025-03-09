@@ -1,5 +1,5 @@
 ---
-title: :"Privacy policy"
+title: "Privacy policy"
 description:
   en: |
     #### 1\. Datenschutz auf einen Blick
