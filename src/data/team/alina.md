@@ -3,7 +3,7 @@ name:
   en: "Alina Subbotina"
   de: "Alina Subbotina"
 path: "alina-subbotina"
-img: "team-member-2.png"
+img: "/assets/images/team/team-member-2.png"
 facebook: "https://www.facebook.com/idancestudio.de"
 instagram: "https://www.instagram.com/idancestudio.de/"
 bio:

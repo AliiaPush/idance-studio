@@ -46,7 +46,7 @@ permalink: "{{  member.data.name.en | slug }}/index.html"
                     <!-- ----------------------------------------------------------------------- -->
                     <!--                src="../assets/images/team/your-image-name.format"       -->
                     <!-- ----------------------------------------------------------------------- -->
-                    <img class="member-img" src="../assets/images/team/{{ member.data.img }}" alt="{{ member.data.name.en }}">
+                    <img class="member-img" src="{{ member.data.img }}" alt="{{ member.data.name.en }}">
                 </div>
                 <div class="member-position-container">
                     <p data-key-text="team.data.{{ pagination.pageNumber }}.bio" class="member-position">{{ member.data.bio.en }}

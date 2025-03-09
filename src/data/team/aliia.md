@@ -3,7 +3,7 @@ name:
   en: "Aliia Pushilina"
   de: "Aliia Pushilina"
 path: "aliia-pushilina"
-img: "team-member-1.png"
+img: "/assets/images/team/team-member-1.png"
 facebook: "https://www.facebook.com/idancestudio.de"
 instagram: "https://www.instagram.com/idancestudio.de/"
 bio:
