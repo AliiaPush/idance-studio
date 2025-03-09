@@ -1,8 +1,8 @@
 ---
 topic:
-  en: Where?
-  de: Wo?
-image: IMG_7069.webp
+  en: "Where?"
+  de: "Wo?"
+image: "/assets/images/goals/IMG_7069.webp"
 reverse: true
 description:
   en: |

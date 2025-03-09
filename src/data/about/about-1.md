@@ -2,7 +2,7 @@
 topic:
   en: "Our mission"
   de: "Unsere Mission"
-image: IMG_5526.webp
+image: "/assets/images/goals/IMG_5526.webp"
 reverse: false
 description:
   en: |

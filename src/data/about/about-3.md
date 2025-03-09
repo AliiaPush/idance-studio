@@ -1,8 +1,8 @@
 ---
 topic:
-  en: For Whom?
-  de: Für wen?
-image: IMG_4472.webp
+  en: "For Whom?"
+  de: "Für wen?"
+image: "/assets/images/goals/IMG_4472.webp"
 reverse: false
 description:
   en: |

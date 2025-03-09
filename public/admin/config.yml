@@ -18,13 +18,175 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "header"
     label: "Header"
-    folder: "src/data/header"
+    folder: "/src/data/header"
     create: false
+    delete: false
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: "topic.en"
+    media_folder: "public/assets/images/header"
+    public_folder: "/assets/images/header"
     fields:
-      - { label: "Topic (EN)", name: "topic.en", widget: "string" }
-      - { label: "Topic (DE)", name: "topic.de", widget: "string" }
-      - { label: "Motto (EN)", name: "motto.en", widget: "string" }
-      - { label: "Motto (DE)", name: "motto.de", widget: "string" }
-      - { label: "Call to action (EN)", name: "callToAction.en", widget: "string" }
-      - { label: "Call to action (DE)", name: "callToAction.de", widget: "string" }
+      - label: "Topic"
+        name: "topic"
+        widget: "object"
+        fields:
+          - { label: "English", name: "en", widget: "string" }
+          - { label: "German", name: "de", widget: "string" }
+      - label: "Motto"
+        name: "motto"
+        widget: "object"
+        fields:
+          - { label: "English", name: "en", widget: "string" }
+          - { label: "German", name: "de", widget: "string" }
+      - label: "Call to Action"
+        name: "callToAction"
+        widget: "object"
+        fields:
+          - { label: "English", name: "en", widget: "string" }
+          - { label: "German", name: "de", widget: "string" }
+
+  - name: "goals"
+    label: "Goals"
+    folder: "/src/data/about"
+    create: false
+    delete: false
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: "topic.en"
+    media_folder: "public/assets/images/goals"
+    public_folder: "/assets/images/goals"
+    fields:
+      - label: "Topic"
+        name: "topic"
+        widget: "object"
+        fields:
+          - { label: "English", name: "en", widget: "string" }
+          - { label: "German", name: "de", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - label: "Description"
+        name: "description"
+        widget: "object"
+        fields:
+          - { label: "English", name: "en", widget: "markdown" }
+          - { label: "German", name: "de", widget: "markdown" }
+
+  - name: "courses"
+    label: "Courses"
+    folder: "/src/data/courses"
+    create: false
+    delete: false
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: "topic.en"
+    fields:
+      - label: "Topic"
+        name: "topic"
+        widget: "object"
+        fields:
+          - { label: "English", name: "en", widget: "string" }
+          - { label: "German", name: "de", widget: "string" }
+      - label: "Age Group"
+        name: "ageGroup"
+        widget: "object"
+        fields:
+          - { label: "English", name: "en", widget: "string" }
+          - { label: "German", name: "de", widget: "string" }
+      - label: "Price"
+        name: "price"
+        widget: "object"
+        fields:
+          - { label: "English", name: "en", widget: "string" }
+          - { label: "German", name: "de", widget: "string" }
+      - label: "Description"
+        name: "description"
+        widget: "object"
+        fields:
+          - { label: "English", name: "en", widget: "markdown" }
+          - { label: "German", name: "de", widget: "markdown" }
+
+  - name: "team"
+    label: "Team"
+    folder: "/src/data/team"
+    create: false
+    delete: false
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: "name.en"
+    media_folder: "public/assets/images/team"
+    public_folder: "/assets/images/team"
+    fields:
+      - label: "Name"
+        name: "name"
+        widget: "object"
+        fields:
+          - { label: "English", name: "en", widget: "string" }
+          - { label: "German", name: "de", widget: "string" }
+      - { label: "Image", name: "img", widget: "image" }
+      - { label: "Facebook", name: "facebook", widget: "string" }
+      - { label: "Instagram", name: "instagram", widget: "string" }
+      - label: "Bio"
+        name: "bio"
+        widget: "object"
+        fields:
+          - { label: "English", name: "en", widget: "string" }
+          - { label: "German", name: "de", widget: "string" }
+      - label: "Description"
+        name: "description"
+        widget: "object"
+        fields:
+          - { label: "English", name: "en", widget: "markdown" }
+          - { label: "German", name: "de", widget: "markdown" }
+
+  - name: "news"
+    label: "News"
+    folder: "/src/data/news"
+    create: true
+    delete: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: "title.en"
+    media_folder: "public/assets/images/news"
+    public_folder: "/assets/images/news"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "object"
+        fields:
+          - { label: "English", name: "en", widget: "string" }
+          - { label: "German", name: "de", widget: "string" }
+      - { label: "Image", name: "img", widget: "image" }
+      - label: "Description"
+        name: "description"
+        widget: "object"
+        fields:
+          - { label: "English", name: "en", widget: "markdown" }
+          - { label: "German", name: "de", widget: "markdown" }
+
+  - name: "timetable"
+    label: "Timetable"
+    folder: "/src/data/timetable"
+    create: true
+    delete: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: "title.en"
+    fields:
+      - label: "Day"
+        name: "title"
+        widget: "object"
+        fields:
+          - { label: "English", name: "en", widget: "string" }
+          - { label: "German", name: "de", widget: "string" }
+      - { label: "Day Number", name: "dayNo", widget: "string" }
+      - label: "Location"
+        name: "location"
+        widget: "object"
+        fields:
+          - { label: "English", name: "en", widget: "string" }
+          - { label: "German", name: "de", widget: "string" }
+      - label: "Classes"
+        name: "classes"
+        widget: "list"
+        fields:
+          - { label: "Time", name: "time", widget: "string" }
+          - label: "Description"
+            name: "description"
+            widget: "object"
+            fields:
+              - { label: "English", name: "en", widget: "string" }
+              - { label: "German", name: "de", widget: "string" }
