@@ -2,7 +2,7 @@
 title:
   en: "Check out the exciting events happening in the region!"
   de: "Sehen Sie sich die spannenden Ereignisse in der Region an!"
-img: "news-image-1.webp"
+img: "/assets/images/news/news-image-1.webp"
 description:
   en: |
     We cordially invite you to participate in the exciting events happening in the coming months. Make sure to mark these important dates in your calendar:

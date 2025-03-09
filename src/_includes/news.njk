@@ -19,7 +19,7 @@
                         <!-- ----------------------------------------------------------------------- -->
                         <!--                src="./assets/images/news/your-image-name.format"        -->
                         <!-- ----------------------------------------------------------------------- -->
-                        <img data-news-navigator-img src="./assets/images/news/{{ item.data.img }}" class="news-navigator-img"></img>
+                        <img data-news-navigator-img src="{{ item.data.img }}" class="news-navigator-img"></img>
                     </div>
                 </div>
                 <!-- news navigator  -->
@@ -39,7 +39,7 @@
                     <!-- ----------------------------------------------------------------------- -->
                     <!--                src="./assets/images/news/your-image-name.format"        -->
                     <!-- ----------------------------------------------------------------------- -->
-                    <img id="news-img" src="./assets/images/news/{{ defaultNews.data.img }}" alt="" class="news-img">
+                    <img id="news-img" src="{{ defaultNews.data.img }}" alt="" class="news-img">
                 </div>
                 {% for item in collections.news %}
                 <!-- news content  -->

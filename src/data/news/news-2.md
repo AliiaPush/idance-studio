@@ -2,7 +2,7 @@
 title:
   en: "Loads of entertainment at the Störnstein Children's Carnival"
   de: "Jede Menge Showprogramm beim Störnsteiner Kinderfasching"
-img: "news-image-2.webp"
+img: "/assets/images/news/news-image-2.webp"
 description:
   en: |
     On February 2nd, we had the pleasure of performing at the Carnival in Störnstein. We showcased two dances: a spring dance and a cheerleader dance. It brought us great joy to showcase our talents and entertain the audience.

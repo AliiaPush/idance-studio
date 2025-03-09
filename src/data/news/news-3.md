@@ -2,7 +2,7 @@
 title:
   en: "Welcome to our new dance studio in Windischeschenbach!"
   de: "Willkommen in unserem neuen Tanzstudio in Windischeschenbach!"
-img: "news-image-3.webp"
+img: "/assets/images/news/news-image-3.webp"
 description:
   en: |
     We are delighted to announce that since January 2024, our dance studio has been open in Windischeschenbach to expand our student community and share our passion for dance. Our studio is already successfully operating in Sternstein and Erbendorf, and we look forward to welcoming talented new dancers into our family.
