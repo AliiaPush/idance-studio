@@ -192,7 +192,7 @@ collections:
             fields:
               - { label: "English", name: "en", widget: "string" }
               - { label: "German", name: "de", widget: "string" }
-  - name: "legal-notice"
+  - name: "legal"
     label: "Legal Notice"
     folder: "/src/pages"
     create: false
