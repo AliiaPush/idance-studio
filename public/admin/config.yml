@@ -193,15 +193,30 @@ collections:
               - { label: "English", name: "en", widget: "string" }
               - { label: "German", name: "de", widget: "string" }
   - name: "legal"
-    label: "Legal Notice"
-    folder: "/src/pages"
+    label: "Legal notice"
+    folder: "/src/data/legal"
     create: false
     delete: false
-    slug: "legal-notice"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     identifier_field: "title"
-    format: yaml-frontmatter
-    editor:
-      preview: true
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Description"
+        name: "description"
+        widget: "object"
+        fields:
+          - { label: "English", name: "en", widget: "markdown" }
+          - { label: "German", name: "de", widget: "markdown" }
+  - name: "privacy"
+    label: "Privacy and policy"
+    folder: "/src/data/privacy"
+    create: false
+    delete: false
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: "title"
+    fields:
+      - label: "Description"
+        name: "description"
+        widget: "object"
+        fields:
+          - { label: "English", name: "en", widget: "markdown" }
+          - { label: "German", name: "de", widget: "markdown" }

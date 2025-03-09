@@ -60,7 +60,7 @@ permalink: "privacy-and-policy/index.html"
         </h3>
       </div>
       <!-- page topic  -->
-      <div class="privacy-n-policy-content">
+      <div class="privacy-n-policy-content" data-key-text="privacy.content">
         {% for item in collections.privacy %}
         {{ item.data.description.en | markdownify | safe }}
         {% endfor %}

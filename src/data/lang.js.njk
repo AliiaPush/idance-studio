@@ -177,10 +177,16 @@ const lang = {
             }
         },
         "privacy": {
-            "title": "{% for item in collections.navigations %}{{item.data.privacyPolicy[lang] | safe}}{% endfor %}"
+            "title": "{% for item in collections.navigations %}{{item.data.privacyPolicy[lang] | safe}}{% endfor %}",
+            {% for item in collections.privacy %}
+            "content":`{{item.data.description[lang] | markdownify | safe}}`
+            {% if not loop.last %},{% endif %}{% endfor %}
         },
         "legal": {
-            "title": "{% for item in collections.navigations %}{{item.data.legal[lang] | safe}}{% endfor %}"
+            "title": "{% for item in collections.navigations %}{{item.data.legal[lang] | safe}}{% endfor %}",
+            {% for item in collections.legal %}
+            "content":`{{item.data.description[lang] | markdownify | safe}}`
+            {% if not loop.last %},{% endif %}{% endfor %}
         },
         "footer": {
             "title": "{% for item in collections.navigations %}{{item.data.footer[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",

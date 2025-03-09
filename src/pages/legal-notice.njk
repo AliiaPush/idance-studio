@@ -60,7 +60,7 @@ permalink: "legal-notice/index.html"
         </h3>
       </div>
       <!-- page topic  -->
-      <div class="who-r-we-content">
+      <div class="who-r-we-content" data-key-text="legal.content">
         {% for item in collections.legal %}
         {{ item.data.description.en | markdownify | safe }}
         {% endfor %}
