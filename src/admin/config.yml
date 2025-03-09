@@ -22,6 +22,7 @@ collections:
     create: false
     delete: false
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: "topic.en"
     media_folder: "public/assets/images/header"
     public_folder: "/assets/images/header"
     fields:
