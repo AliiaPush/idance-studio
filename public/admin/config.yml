@@ -3,6 +3,8 @@ backend:
   branch: main
 media_folder: "public/assets/images" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/assets/images" # The src attribute for uploaded media will begin with /images/uploads
+editor:
+  preview: false
 collections:
   - name: "about" # Used in routes, e.g., /admin/collections/blog
     label: "About" # Used in the UI
@@ -190,3 +192,16 @@ collections:
             fields:
               - { label: "English", name: "en", widget: "string" }
               - { label: "German", name: "de", widget: "string" }
+  - name: "legal"
+    label: "Legal Notice"
+    folder: "/src/pages"
+    create: false
+    delete: false
+    slug: "legal-notice"
+    identifier_field: "title"
+    format: yaml-frontmatter
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
