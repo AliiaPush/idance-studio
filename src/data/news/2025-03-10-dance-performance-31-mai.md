@@ -2,7 +2,7 @@
 title:
   en: Dance Performance - 31 Mai
   de: Tanzaufführung - 31. Mai
-img: /assets/images/news/photo1712048817-7-.jpeg
+img: /assets/images/news/dance.jpg
 description:
   en: >-
     
