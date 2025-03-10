@@ -21,7 +21,7 @@ const lang = {
             "data": {
                 
                 "topic":"Idance Studio",
-                "motto":"Dancing classes to your doorstep.",
+                "motto":"Dancing classes to your doorstep",
                 "action":"Register for a free trial"
                 
             }
@@ -188,6 +188,16 @@ const lang = {
 <p>We take pride in supporting your children's development in the world of dance and helping them unleash their creative potential. We look forward to meeting new students and sharing the joy and inspiration of the art of dance with them. See you soon in our classes!</p>
 `
                 }
+                ,
+                3:{
+                    "title":"Dance Performance - 31 Mai",
+                    "content":`<p>It’s finally happening – our very first full performance as a dance group!
+After taking part in other concerts, we now invite you to <strong>our own dance show</strong>.
+We are excited to present our dance performance titled <strong>“The Magical Land of Dreams”</strong>.
+Join us on <strong>May 31, 2025</strong>, and step into a world of magic, movement, and imagination.
+We can’t wait to see you there!</p>
+`
+                }
                 
             }
         },
@@ -346,7 +356,7 @@ const lang = {
                         
                         "0": {
                             "time": "13.30 - 14.15",
-                            "description": "Minis (Age Group 3 - 6)",
+                            "description": "Minis (Age Group 3 - 5)",
                             "location": ""
                         }
                         ,
@@ -358,7 +368,7 @@ const lang = {
                         ,
                         "2": {
                             "time": "15.00 - 16.00",
-                            "description": "Kids (Age Group 7 - 9)",
+                            "description": "Kids (Age Group 8 - 10)",
                             "location": ""
                         }
                         ,
@@ -531,7 +541,7 @@ Die für den Kontakt zur Verfügung stehenden Sprachen sind: Deutsch, Englisch. 
             "data": {
                 
                 "topic":"Idance Studio",
-                "motto":"Tanzstunden vor deiner Haustür.",
+                "motto":"Tanzstunden vor deiner Haustür",
                 "action":"kostenlose Probestunde vereinbaren"
                 
             }
@@ -696,6 +706,16 @@ Die für den Kontakt zur Verfügung stehenden Sprachen sind: Deutsch, Englisch. 
 </li>
 </ul>
 <p>Wir sind stolz darauf, die Entwicklung Ihrer Kinder in der Welt des Tanzes zu unterstützen und ihnen zu helfen, ihr kreatives Potenzial zu entfalten. Wir freuen uns darauf, neue Schüler zu treffen und mit ihnen die Freude und Inspiration der Tanzkunst zu teilen. Wir sehen uns bald auf unseren Kursen!</p>
+`
+                }
+                ,
+                3:{
+                    "title":"Tanzaufführung - 31. Mai",
+                    "content":`<p>Endlich ist es soweit – unser allererstes eigenes Bühnenprogramm als Tanzgruppe!
+Nach mehreren Auftritten in anderen Konzerten laden wir euch nun zu <strong>unserer eigenen Tanzshow</strong> ein.
+Wir präsentieren mit großer Freude unser Tanztheater <strong>„Das magische Traumland“</strong>.
+Kommt am <strong>31. Mai 2025</strong> vorbei und taucht ein in eine Welt voller Magie, Bewegung und Fantasie.
+Wir freuen uns auf euch!</p>
 `
                 }
                 

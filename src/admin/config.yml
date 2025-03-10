@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: main
-media_folder: "public/assets/images" # Media files will be stored in the repo under static/images/uploads
+media_folder: "/public/assets/images" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/assets/images" # The src attribute for uploaded media will begin with /images/uploads
 editor:
   preview: false
@@ -13,7 +13,7 @@ collections:
     delete: false
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     identifier_field: "topic.en"
-    media_folder: "public/assets/images/header"
+    media_folder: "/public/assets/images/header"
     public_folder: "/assets/images/header"
     fields:
       - label: "Topic"
@@ -42,7 +42,7 @@ collections:
     delete: false
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     identifier_field: "topic.en"
-    media_folder: "public/assets/images/goals"
+    media_folder: "/public/assets/images/goals"
     public_folder: "/assets/images/goals"
     fields:
       - label: "Topic"
@@ -99,7 +99,7 @@ collections:
     delete: false
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     identifier_field: "name.en"
-    media_folder: "public/assets/images/team"
+    media_folder: "/public/assets/images/team"
     public_folder: "/assets/images/team"
     fields:
       - label: "Name"
@@ -131,7 +131,7 @@ collections:
     delete: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     identifier_field: "title.en"
-    media_folder: "public/assets/images/news"
+    media_folder: "/public/assets/images/news"
     public_folder: "/assets/images/news"
     fields:
       - label: "Title"
