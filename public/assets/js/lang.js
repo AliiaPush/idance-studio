@@ -75,19 +75,19 @@ const lang = {
             "data": {
                 
                 0:{
-                    "title":"Minis",
-                    "content":`<p>In this course, children embark on a magical journey full of movement and imagination. We playfully promote the fundamentals of dance and rhythm. Through our courses, children develop their coordination, flexibility, and musical sensitivity. This early dance development lays the foundation for various dance styles such as classical ballet and modern dance genres.</p>
+                    "title":"Kids",
+                    "content":`<p>This course is designed for elementary school children who enjoy dancing, moving, and expressing themselves through dance. In this course, we help children develop their dance skills, unleash their creative abilities, and learn to listen to music and express themselves through it. We focus on modern dance but also provide children with the opportunity to explore the fundamentals of ballet.</p>
 `,
-                    "age": "3-6 years",
+                    "age": "6-9 years",
                     "price": "29 Euros per month"
 
                 }
                 ,
                 1:{
-                    "title":"Kids",
-                    "content":`<p>This course is designed for elementary school children who enjoy dancing, moving, and expressing themselves through dance. In this course, we help children develop their dance skills, unleash their creative abilities, and learn to listen to music and express themselves through it. We focus on modern dance but also provide children with the opportunity to explore the fundamentals of ballet.</p>
+                    "title":"Minis",
+                    "content":`<p>In this course, children embark on a magical journey full of movement and imagination. We playfully promote the fundamentals of dance and rhythm. Through our courses, children develop their coordination, flexibility, and musical sensitivity. This early dance development lays the foundation for various dance styles such as classical ballet and modern dance genres.</p>
 `,
-                    "age": "6-9 years",
+                    "age": "3-6 years",
                     "price": "29 Euros per month"
 
                 }
@@ -132,6 +132,16 @@ const lang = {
             "data": {
                 
                 0:{
+                    "title":"Dance Performance - 31 Mai",
+                    "content":`<p>It’s finally happening – our very first full performance as a dance group!
+After taking part in other concerts, we now invite you to <strong>our own dance show</strong>.
+We are excited to present our dance performance titled <strong>“The Magical Land of Dreams”</strong>.
+Join us on <strong>May 31, 2025</strong>, and step into a world of magic, movement, and imagination.
+We can’t wait to see you there!</p>
+`
+                }
+                ,
+                1:{
                     "title":"Check out the exciting events happening in the region!",
                     "content":`<p>We cordially invite you to participate in the exciting events happening in the coming months. Make sure to mark these important dates in your calendar:</p>
 <ul>
@@ -149,7 +159,7 @@ const lang = {
 `
                 }
                 ,
-                1:{
+                2:{
                     "title":"Loads of entertainment at the Störnstein Children's Carnival",
                     "content":`<p>On February 2nd, we had the pleasure of performing at the Carnival in Störnstein. We showcased two dances: a spring dance and a cheerleader dance. It brought us great joy to showcase our talents and entertain the audience.</p>
 <p>The children were thrilled to perform and showcase themselves, and we were overwhelmed by the positive response from the audience. It was heartwarming to see so many friendly faces cheering us on.</p>
@@ -158,7 +168,7 @@ const lang = {
 `
                 }
                 ,
-                2:{
+                3:{
                     "title":"Welcome to our new dance studio in Windischeschenbach!",
                     "content":`<p>We are delighted to announce that since January 2024, our dance studio has been open in Windischeschenbach to expand our student community and share our passion for dance. Our studio is already successfully operating in Sternstein and Erbendorf, and we look forward to welcoming talented new dancers into our family.</p>
 <p>Classes will be held every Wednesday according to the following schedule:</p>
@@ -186,16 +196,6 @@ const lang = {
 </li>
 </ul>
 <p>We take pride in supporting your children's development in the world of dance and helping them unleash their creative potential. We look forward to meeting new students and sharing the joy and inspiration of the art of dance with them. See you soon in our classes!</p>
-`
-                }
-                ,
-                3:{
-                    "title":"Dance Performance - 31 Mai",
-                    "content":`<p>It’s finally happening – our very first full performance as a dance group!
-After taking part in other concerts, we now invite you to <strong>our own dance show</strong>.
-We are excited to present our dance performance titled <strong>“The Magical Land of Dreams”</strong>.
-Join us on <strong>May 31, 2025</strong>, and step into a world of magic, movement, and imagination.
-We can’t wait to see you there!</p>
 `
                 }
                 
@@ -297,58 +297,6 @@ We can’t wait to see you there!</p>
             "description": "Description",
             "data": {
                 
-                3: {
-                    "title": "Wednesday",
-                    "address": "WINDISCHESCHENBACH (WINTERLING-PORZELLAN-STRAßE 25)",
-                    "rows": {
-                        
-                        "0": {
-                            "time": "15.00 - 15.45",
-                            "description": "Minis (Age Group 4 - 6)",
-                            "location": ""
-                        }
-                        ,
-                        "1": {
-                            "time": "16.00 - 17.00",
-                            "description": "Kids (Age Group 6 - 9)",
-                            "location": ""
-                        }
-                        ,
-                        "2": {
-                            "time": "17.00 - 18.00",
-                            "description": "Teens (Age Group 9 - 16)",
-                            "location": ""
-                        }
-                        ,
-                        "3": {
-                            "time": "18.00 – 19.00",
-                            "description": "High Heels (Adults)",
-                            "location": ""
-                        }
-                        
-                    }
-                }
-                ,
-                4: {
-                    "title": "Thursday",
-                    "address": "ERBENDORF (FRÜHMEßGASSE 15 - SPORTHALLE)",
-                    "rows": {
-                        
-                        "0": {
-                            "time": "14.00 - 14.45",
-                            "description": "Minis (Age Group 4 - 6)",
-                            "location": ""
-                        }
-                        ,
-                        "1": {
-                            "time": "15.00 - 16.00",
-                            "description": "Kids (Age Group 6 - 9)",
-                            "location": ""
-                        }
-                        
-                    }
-                }
-                ,
                 5: {
                     "title": "Friday",
                     "address": "STÖRNSTEIN (FLOßER STR. 25B - RATHAUS)",
@@ -381,6 +329,58 @@ We can’t wait to see you there!</p>
                         "4": {
                             "time": "17.00 - 18.00",
                             "description": "Teens (Age Group 12 - 18)",
+                            "location": ""
+                        }
+                        
+                    }
+                }
+                ,
+                4: {
+                    "title": "Thursday",
+                    "address": "ERBENDORF (FRÜHMEßGASSE 15 - SPORTHALLE)",
+                    "rows": {
+                        
+                        "0": {
+                            "time": "14.00 - 14.45",
+                            "description": "Minis (Age Group 4 - 6)",
+                            "location": ""
+                        }
+                        ,
+                        "1": {
+                            "time": "15.00 - 16.00",
+                            "description": "Kids (Age Group 6 - 9)",
+                            "location": ""
+                        }
+                        
+                    }
+                }
+                ,
+                3: {
+                    "title": "Wednesday",
+                    "address": "WINDISCHESCHENBACH (WINTERLING-PORZELLAN-STRAßE 25)",
+                    "rows": {
+                        
+                        "0": {
+                            "time": "15.00 - 15.45",
+                            "description": "Minis (Age Group 4 - 6)",
+                            "location": ""
+                        }
+                        ,
+                        "1": {
+                            "time": "16.00 - 17.00",
+                            "description": "Kids (Age Group 6 - 9)",
+                            "location": ""
+                        }
+                        ,
+                        "2": {
+                            "time": "17.00 - 18.00",
+                            "description": "Teens (Age Group 9 - 16)",
+                            "location": ""
+                        }
+                        ,
+                        "3": {
+                            "time": "18.00 – 19.00",
+                            "description": "High Heels (Adults)",
                             "location": ""
                         }
                         
@@ -595,19 +595,19 @@ Die für den Kontakt zur Verfügung stehenden Sprachen sind: Deutsch, Englisch. 
             "data": {
                 
                 0:{
-                    "title":"Minis",
-                    "content":`<p>In diesem Kurs begeben sich den Kindern auf eine magische Reise voller Bewegung und Fantasie. Wir fördern spielerisch die Grundlagen des Tanzes und der Rhythmik. Durch unsere Kurse entwickeln Kinder ihre Koordination, Flexibilität und musikalische Sensibilität. Diese frühe tänzerische Entwicklung ist die Grundlage für verschiedene Tanzstile wie klassisches Ballett und moderne Tanzrichtungen.</p>
+                    "title":"Kids",
+                    "content":`<p>Dieser Kurs richtet sich an Grundschulkinder, die gerne tanzen, sich bewegen und sich durch Tanz ausdrücken möchten. In diesem Kurs helfen wir den Kindern, ihre Tanzfähigkeiten zu entwickeln, ihre kreativen Fähigkeiten zu entfalten und lernen, Musik zu hören und sich durch Musik auszudrücken. Wir arbeiten im Bereich des modernen Tanzes, bieten den Kindern jedoch auch die Möglichkeit, die Grundlagen des Balletts kennenzulernen.</p>
 `,
-                    "age": "3-6 Jahre",
+                    "age": "6-9 Jahre",
                     "price": "29 Euro pro Monat"
 
                 }
                 ,
                 1:{
-                    "title":"Kids",
-                    "content":`<p>Dieser Kurs richtet sich an Grundschulkinder, die gerne tanzen, sich bewegen und sich durch Tanz ausdrücken möchten. In diesem Kurs helfen wir den Kindern, ihre Tanzfähigkeiten zu entwickeln, ihre kreativen Fähigkeiten zu entfalten und lernen, Musik zu hören und sich durch Musik auszudrücken. Wir arbeiten im Bereich des modernen Tanzes, bieten den Kindern jedoch auch die Möglichkeit, die Grundlagen des Balletts kennenzulernen.</p>
+                    "title":"Minis",
+                    "content":`<p>In diesem Kurs begeben sich den Kindern auf eine magische Reise voller Bewegung und Fantasie. Wir fördern spielerisch die Grundlagen des Tanzes und der Rhythmik. Durch unsere Kurse entwickeln Kinder ihre Koordination, Flexibilität und musikalische Sensibilität. Diese frühe tänzerische Entwicklung ist die Grundlage für verschiedene Tanzstile wie klassisches Ballett und moderne Tanzrichtungen.</p>
 `,
-                    "age": "6-9 Jahre",
+                    "age": "3-6 Jahre",
                     "price": "29 Euro pro Monat"
 
                 }
@@ -652,6 +652,16 @@ Die für den Kontakt zur Verfügung stehenden Sprachen sind: Deutsch, Englisch. 
             "data": {
                 
                 0:{
+                    "title":"Tanzaufführung - 31. Mai",
+                    "content":`<p>Endlich ist es soweit – unser allererstes eigenes Bühnenprogramm als Tanzgruppe!
+Nach mehreren Auftritten in anderen Konzerten laden wir euch nun zu <strong>unserer eigenen Tanzshow</strong> ein.
+Wir präsentieren mit großer Freude unser Tanztheater <strong>„Das magische Traumland“</strong>.
+Kommt am <strong>31. Mai 2025</strong> vorbei und taucht ein in eine Welt voller Magie, Bewegung und Fantasie.
+Wir freuen uns auf euch!</p>
+`
+                }
+                ,
+                1:{
                     "title":"Sehen Sie sich die spannenden Ereignisse in der Region an!",
                     "content":`<p>Wir laden Sie herzlich ein, an den aufregenden Veranstaltungen teilzunehmen, die in den kommenden Monaten stattfinden werden. Markieren Sie sich die folgenden wichtigen Termine in Ihrem Kalender:</p>
 <ul>
@@ -669,7 +679,7 @@ Die für den Kontakt zur Verfügung stehenden Sprachen sind: Deutsch, Englisch. 
 `
                 }
                 ,
-                1:{
+                2:{
                     "title":"Jede Menge Showprogramm beim Störnsteiner Kinderfasching",
                     "content":`<p>Am 2. Februar hatten wir die Freude, beim Karneval in Störnstein aufzutreten. Wir präsentierten zwei Tänze: einen Frühlingstanz und einen Tanz der Cheerleader. Es bereitete uns große Freude, unsere Talente zu zeigen und das Publikum zu unterhalten.</p>
 <p>Die Kinder waren begeistert, sich zu präsentieren, und wir waren überwältigt von der positiven Resonanz des Publikums. Es war schön zu sehen, wie viele freundliche Gesichter uns anfeuerten.</p>
@@ -678,7 +688,7 @@ Die für den Kontakt zur Verfügung stehenden Sprachen sind: Deutsch, Englisch. 
 `
                 }
                 ,
-                2:{
+                3:{
                     "title":"Willkommen in unserem neuen Tanzstudio in Windischeschenbach!",
                     "content":`<p>Wir freuen uns, Ihnen mitteilen zu können, dass unser Tanzstudio seit Januar 2024 in Windischeschenbach geöffnet ist, um unseren Schülerkreis zu erweitern und unsere Leidenschaft für Tanz zu teilen. Unser Studio ist bereits erfolgreich in Störnstein und Erbendorf tätig, und wir freuen uns darauf, talentierte neue Tänzer in unserer Familie begrüßen zu dürfen.</p>
 <p>Die Kurse finden jeden Mittwoch nach folgendem Zeitplan statt:</p>
@@ -706,16 +716,6 @@ Die für den Kontakt zur Verfügung stehenden Sprachen sind: Deutsch, Englisch. 
 </li>
 </ul>
 <p>Wir sind stolz darauf, die Entwicklung Ihrer Kinder in der Welt des Tanzes zu unterstützen und ihnen zu helfen, ihr kreatives Potenzial zu entfalten. Wir freuen uns darauf, neue Schüler zu treffen und mit ihnen die Freude und Inspiration der Tanzkunst zu teilen. Wir sehen uns bald auf unseren Kursen!</p>
-`
-                }
-                ,
-                3:{
-                    "title":"Tanzaufführung - 31. Mai",
-                    "content":`<p>Endlich ist es soweit – unser allererstes eigenes Bühnenprogramm als Tanzgruppe!
-Nach mehreren Auftritten in anderen Konzerten laden wir euch nun zu <strong>unserer eigenen Tanzshow</strong> ein.
-Wir präsentieren mit großer Freude unser Tanztheater <strong>„Das magische Traumland“</strong>.
-Kommt am <strong>31. Mai 2025</strong> vorbei und taucht ein in eine Welt voller Magie, Bewegung und Fantasie.
-Wir freuen uns auf euch!</p>
 `
                 }
                 
@@ -817,58 +817,6 @@ Wir freuen uns auf euch!</p>
             "description": "Beschreibung",
             "data": {
                 
-                3: {
-                    "title": "Mittwoch",
-                    "address": "WINDISCHESCHENBACH (WINTERLING-PORZELLAN-STRAßE 25)",
-                    "rows": {
-                        
-                        "0": {
-                            "time": "15.00 - 15.45",
-                            "description": "Minis (ab 4 Jahren)",
-                            "location": ""
-                        }
-                        ,
-                        "1": {
-                            "time": "16.00 - 17.00",
-                            "description": "Kids (ab 6 Jahren)",
-                            "location": ""
-                        }
-                        ,
-                        "2": {
-                            "time": "17.00 - 18.00",
-                            "description": "Teens (ab 9 Jahren)",
-                            "location": ""
-                        }
-                        ,
-                        "3": {
-                            "time": "18.00 – 19.00",
-                            "description": "High Heels (Erwachsene)",
-                            "location": ""
-                        }
-                        
-                    }
-                }
-                ,
-                4: {
-                    "title": "Donnerstag",
-                    "address": "ERBENDORF (FRÜHMEßGASSE 15 - SPORTHALLE)",
-                    "rows": {
-                        
-                        "0": {
-                            "time": "14.00 - 14.45",
-                            "description": "Minis (ab 4 Jahren)",
-                            "location": ""
-                        }
-                        ,
-                        "1": {
-                            "time": "15.00 - 16.00",
-                            "description": "Kids (ab 6 Jahren)",
-                            "location": ""
-                        }
-                        
-                    }
-                }
-                ,
                 5: {
                     "title": "Freitag",
                     "address": "STÖRNSTEIN (FLOßER STR. 25B - RATHAUS)",
@@ -901,6 +849,58 @@ Wir freuen uns auf euch!</p>
                         "4": {
                             "time": "17.00 - 18.00",
                             "description": "Teens (ab 10 Jahren)",
+                            "location": ""
+                        }
+                        
+                    }
+                }
+                ,
+                4: {
+                    "title": "Donnerstag",
+                    "address": "ERBENDORF (FRÜHMEßGASSE 15 - SPORTHALLE)",
+                    "rows": {
+                        
+                        "0": {
+                            "time": "14.00 - 14.45",
+                            "description": "Minis (ab 4 Jahren)",
+                            "location": ""
+                        }
+                        ,
+                        "1": {
+                            "time": "15.00 - 16.00",
+                            "description": "Kids (ab 6 Jahren)",
+                            "location": ""
+                        }
+                        
+                    }
+                }
+                ,
+                3: {
+                    "title": "Mittwoch",
+                    "address": "WINDISCHESCHENBACH (WINTERLING-PORZELLAN-STRAßE 25)",
+                    "rows": {
+                        
+                        "0": {
+                            "time": "15.00 - 15.45",
+                            "description": "Minis (ab 4 Jahren)",
+                            "location": ""
+                        }
+                        ,
+                        "1": {
+                            "time": "16.00 - 17.00",
+                            "description": "Kids (ab 6 Jahren)",
+                            "location": ""
+                        }
+                        ,
+                        "2": {
+                            "time": "17.00 - 18.00",
+                            "description": "Teens (ab 9 Jahren)",
+                            "location": ""
+                        }
+                        ,
+                        "3": {
+                            "time": "18.00 – 19.00",
+                            "description": "High Heels (Erwachsene)",
                             "location": ""
                         }
                         
