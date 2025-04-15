@@ -342,7 +342,7 @@ function contact() {
       form.append("subject", subject.value);
       form.append("message", message.value);
 
-      let request = await fetch("https://tanzstudio-backend.vercel.app/api/idance_studio.php", {
+      let request = await fetch("https://idance-studio.vercel.app/api/idance_studio.php", {
         method: "POST",
         body: form,
       });
@@ -414,7 +414,7 @@ function register() {
       form.append("email", email.value);
       form.append("message", message.value);
 
-      let request = await fetch("https://tanzstudio-backend.vercel.app/api/idance_studio.php", {
+      let request = await fetch("https://idance-studio.vercel.app/api/idance_studio.php", {
         method: "POST",
         body: form,
       });
