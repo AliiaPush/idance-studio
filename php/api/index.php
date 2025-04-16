@@ -20,10 +20,17 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 
-require_once __DIR__ . "/../vendor/autoload.php";
+// require_once __DIR__ . "/../vendor/autoload.php";
+require_once __DIR__ . "/../vendor/phpmailer/phpmailer/src/PHPMailer.php";
+require_once __DIR__ . "/../vendor/phpmailer/phpmailer/src/SMTP.php";
+require_once __DIR__ . "/../vendor/phpmailer/phpmailer/src/Exception.php";
+require_once __DIR__ . "/../vendor/vlucas/phpdotenv/src/Dotenv.php";
 
 
 use PHPMailer\PHPMailer\PHPMailer;
+
+require_once __DIR__ . "/../vendor/autoload.php";
+
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
