@@ -1,7 +1,7 @@
 <?php
-// header("Access-Control-Allow-Origin: *");
-
-// header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type, Authorization");
 // header("Access-Control-Allow-Headers: Content-Type");
 // header("Content-Type: text/plain");
 require_once "vendor/autoload.php";
@@ -33,7 +33,11 @@ function set_SMTP($from, $name, $subject, $template)
     $mail->Subject = $subject;
     $mail->Body    = $template;
 
-    $mail->send();
+    try {
+        $mail->send();
+    } catch (Exception $ex) {
+        echo "Message could not be sent.";
+    }
 }
 
 if (isset($_POST["execution"]) && $_POST["execution"] == "contact") {
