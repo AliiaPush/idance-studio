@@ -1,11 +1,5 @@
-modules = ["web", "nodejs-20"]
+run = ["php", "-S", "0.0.0.0:3000", "-t", "php/api"]
 
 [nix]
 channel = "stable-24_05"
 packages = ["php", "composer"]
-
-[env]
-REPLIT_DIR = "php"
-
-[deployment]
-run = ["php", "-S", "0.0.0.0:3000", "-t", "php"]
