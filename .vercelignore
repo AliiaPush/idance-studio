@@ -6,4 +6,3 @@ eleventy.config.js
 netlify.toml
 package-lock.json
 package.json
-*.env
