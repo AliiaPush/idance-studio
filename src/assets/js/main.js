@@ -317,6 +317,100 @@ function changeNavWithScroll() {
 }
 changeNavWithScroll();
 
+function generateElements(path) {
+  return new Promise(async (resolve) => {
+    const template = document.createElement('template');
+    let element = await fetch(path).then((response) => response.text());
+    template.innerHTML = element.trim();
+    resolve(template.content.firstElementChild);
+  })
+}
+
+function setFormAlert(state) {
+  return new Promise(async (resolve) => {
+    let alert;
+    if (state == "success") {
+      alert = await generateElements("/assets/js/components/alert-success.html");
+    } else if (state == "error") {
+      alert = await generateElements("/assets/js/components/alert-error.html");
+    }
+    return resolve(alert);
+  })
+}
+
+function showAlert(alert) {
+  return new Promise(async (resolve) => {
+    document.body.appendChild(alert);
+    await new Promise((resolve) => setTimeout(resolve, 10));
+    alert.style.opacity = 1;
+    await new Promise((resolve) => setTimeout(resolve, 10));
+    alert.style.transform = "translateX(-10%)";
+    await new Promise((resolve) => {
+      alert.addEventListener("transitionend", () => {
+        resolve();
+      })
+    });
+    alert.style.transform = "translateX(0)";
+    alert.addEventListener("transitionend", () => {
+      resolve();
+    })
+  })
+}
+
+function closeAlert(alert) {
+  return new Promise(async (resolve) => {
+    alert.style.transform = "translateX(-10%)";
+    await new Promise((resolve) => {
+      alert.addEventListener("transitionend", () => {
+        resolve();
+      })
+    })
+    alert.style.transform = "translateX(120%)";
+    await new Promise((resolve) => {
+      alert.addEventListener("transitionend", () => {
+        resolve();
+      })
+    })
+    alert.style.opacity = 0;
+    await new Promise((resolve) => setTimeout(resolve, 10));
+    document.body.removeChild(alert);
+    resolve(null);
+  })
+
+}
+
+async function formAlert(state, message) {
+  let alert = await setFormAlert(state);
+  alert.querySelector('[data-alert-text]').textContent = message;
+  await showAlert(alert);
+  console.log(alert);
+
+  alert.querySelector("#alert-close-btn").addEventListener("click", async () => {
+    alert = await closeAlert(alert);
+  })
+  await new Promise((resolve) => setTimeout(resolve, 5000));
+  if (alert != null) {
+    alert = await closeAlert(alert);
+  }
+}
+
+function showFormSpinner(sendBtn) {
+  return new Promise(async (resolve) => {
+    let formSpinner = await generateElements("/assets/js/components/form-spinner.html");
+    sendBtn.appendChild(formSpinner);
+    sendBtn.disabled = true;
+    return resolve(formSpinner);
+  })
+}
+
+function hideFormSpinner(formSpinner, sendBtn) {
+  return new Promise(async (resolve) => {
+    sendBtn.removeChild(formSpinner);
+    sendBtn.disabled = false;
+    resolve(null);
+  })
+}
+
 function contact() {
   const name = document.getElementById("name");
   const topic = document.getElementById("topic-value");
@@ -324,13 +418,10 @@ function contact() {
   const subject = document.getElementById("subject");
   const message = document.getElementById("message");
   const sendBtn = document.getElementById("send");
-  const alert = document.getElementById("alert");
-  const successAlert = document.querySelector("#alert-success");
-  const errorAlert = document.querySelector("#alert-error");
-  const alertClose = document.getElementById("alert-close-btn");
   const clickOrTouch = "ontouchstart" in window ? "touchstart" : "click";
   if (name != null) {
     sendBtn.addEventListener(clickOrTouch, async (event) => {
+      let formSpinner = await showFormSpinner(sendBtn);
       event.preventDefault();
       // let request = new XMLHttpRequest();
       let form = new FormData();
@@ -349,37 +440,12 @@ function contact() {
 
       let response = request.text();
       const responseText = await response.then((value) => value);
+      formSpinner = await hideFormSpinner(formSpinner, sendBtn);
       if (responseText == "success") {
-        alert.classList.add("show-alert");
-        await new Promise((resolve) => setTimeout(resolve, 0));
-        alert.classList.add("pop-alert");
-        errorAlert.classList.remove("alert-error");
-        successAlert.classList.add("alert-success");
-        document.querySelector('[data-alert-text="success"]').innerText = "Thank you for contacting us!";
+        formAlert("success", "Thank you for contacting us!");
       } else {
-        alert.classList.add("show-alert");
-        await new Promise((resolve) => setTimeout(resolve, 0));
-        alert.classList.add("pop-alert");
-        successAlert.classList.remove("alert-success");
-        errorAlert.classList.add("alert-error");
-        document.querySelector('[data-alert-text="error"]').innerText = responseText;
+        formAlert("error", responseText);
       }
-    });
-    alertClose.addEventListener(clickOrTouch, async (event) => {
-      event.preventDefault();
-      alert.classList.remove("pop-alert");
-      await new Promise((resolve) => setTimeout(resolve, 0));
-      alert.classList.add("pop-alert-reverse");
-      alert.addEventListener(
-        "animationend",
-        () => {
-          alert.classList.remove("show-alert");
-          alert.classList.remove("pop-alert-reverse");
-        },
-        {
-          once: true,
-        }
-      );
     });
   }
 }
@@ -394,14 +460,11 @@ function register() {
   const email = document.getElementById("email");
   const message = document.getElementById("message");
   const sendBtn = document.getElementById("send");
-  const alert = document.getElementById("alert");
-  const successAlert = document.querySelector("#alert-success");
-  const errorAlert = document.querySelector("#alert-error");
-  const alertClose = document.getElementById("alert-close-btn");
   const clickOrTouch = "ontouchstart" in window ? "touchstart" : "click";
 
   if (firstName != null && lastName != null) {
     sendBtn.addEventListener(clickOrTouch, async (event) => {
+      let formSpinner = await showFormSpinner(sendBtn);
       event.preventDefault();
       // let request = new XMLHttpRequest();
       let form = new FormData();
@@ -421,37 +484,12 @@ function register() {
 
       let response = request.text();
       const responseText = await response.then((value) => value);
+      formSpinner = await hideFormSpinner(formSpinner, sendBtn);
       if (responseText == "success") {
-        alert.classList.add("show-alert");
-        await new Promise((resolve) => setTimeout(resolve, 0));
-        alert.classList.add("pop-alert");
-        errorAlert.classList.remove("alert-error");
-        successAlert.classList.add("alert-success");
-        document.querySelector('[data-alert-text="success"]').innerText = "We'll get back to you soon!";
+        formAlert("success", "We'll get back to you soon!");
       } else {
-        alert.classList.add("show-alert");
-        await new Promise((resolve) => setTimeout(resolve, 0));
-        alert.classList.add("pop-alert");
-        successAlert.classList.remove("alert-success");
-        errorAlert.classList.add("alert-error");
-        document.querySelector('[data-alert-text="error"]').innerText = responseText;
+        formAlert("error", responseText);
       }
-    });
-    alertClose.addEventListener(clickOrTouch, async (event) => {
-      event.preventDefault();
-      alert.classList.remove("pop-alert");
-      await new Promise((resolve) => setTimeout(resolve, 0));
-      alert.classList.add("pop-alert-reverse");
-      alert.addEventListener(
-        "animationend",
-        () => {
-          alert.classList.remove("show-alert");
-          alert.classList.remove("pop-alert-reverse");
-        },
-        {
-          once: true,
-        }
-      );
     });
   }
 }
@@ -538,20 +576,3 @@ function language() {
 }
 
 language();
-
-// fetch('../../editable/About/About-en.xlsx')
-//   .then(response => response.arrayBuffer())
-//   .then(data => {
-//     const workbook = XLSX.read(data, { type: 'array' });
-
-
-//     const worksheet = workbook.Sheets["1"];
-
-//     // Convert to JSON
-//     const jsonData = XLSX.utils.sheet_to_json(worksheet);
-//     console.log(jsonData);
-//   })
-//   .catch(error => {
-//     console.error("Error fetching the Excel file:", error);
-//     1415
-//   });

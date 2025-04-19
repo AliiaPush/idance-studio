@@ -104,35 +104,12 @@ body {
   border: 1px solid #6a5a72;
   box-sizing: border-box;
   padding: 10px 10px;
-  display: none;
+  display: flex;
+  opacity: 0;
   justify-content: space-between;
   align-items: flex-start;
   transform: translateX(120%);
-}
-
-.pop-alert {
-  animation-name: showAlert;
-  animation-duration: 600ms;
-  animation-fill-mode: forwards;
-}
-
-.pop-alert-reverse {
-  animation-direction: reverse;
-  animation-name: showAlert;
-  animation-duration: 600ms;
-  animation-fill-mode: forwards;
-}
-
-.show-alert {
-  display: flex;
-}
-
-.alert-success {
-  display: flex !important;
-}
-
-.alert-error {
-  display: flex !important;
+  transition: transform 100ms linear;
 }
 
 .alert-close-btn {
@@ -160,7 +137,7 @@ body {
   width: max-content;
   min-height: 50px;
   height: auto;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 50px;
@@ -181,6 +158,24 @@ body {
   color: #504356;
   font-size: 15px;
   margin-right: 10px;
+}
+
+.form-spinner {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  padding-right: 2rem;
+}
+
+.form-spinner-icon {
+  height: 55%;
+  aspect-ratio: 1/1;
 }
 
 .show-element {
@@ -1950,6 +1945,7 @@ body {
   color: #e7e1ea;
   text-transform: capitalize;
   padding: 0.4rem 4rem;
+  position: relative;
 }
 
 .form-options {
@@ -2078,14 +2074,6 @@ body {
   margin: 100px 0;
 }
 
-.privacy-n-policy-topic {
-  margin: 50px 0 30px 0;
-  width: -moz-max-content;
-  width: max-content;
-  max-width: 100%;
-  height: auto;
-}
-
 .privacy-n-policy h4 {
   font-family: "Kaisei HarunoUmi", serif;
   color: #6a5a72;
@@ -2095,14 +2083,6 @@ body {
   text-align: left;
 }
 
-.privacy-n-policy-sub-topic {
-  margin: 30px 0 20px 0;
-  width: -moz-max-content;
-  width: max-content;
-  max-width: 100%;
-  height: auto;
-}
-
 .privacy-n-policy h5 {
   font-family: "Kaisei HarunoUmi", serif;
   color: #6a5a72;
@@ -2110,14 +2090,6 @@ body {
   font-weight: 600;
   margin: 30px 0 20px 0;
   text-align: left;
-}
-
-.privacy-n-policy-description {
-  margin-bottom: 20px;
-  width: -moz-max-content;
-  width: max-content;
-  max-width: 100%;
-  height: auto;
 }
 
 .privacy-n-policy p,

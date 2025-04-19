@@ -5,6 +5,7 @@ module.exports = async function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/assets/styles/style.css.map");
     eleventyConfig.addPassthroughCopy("./src/assets/images");
     eleventyConfig.addPassthroughCopy("./src/assets/js");
+    eleventyConfig.addPassthroughCopy("./src/assets/js/components");
     eleventyConfig.addPassthroughCopy("./src/admin");
 
 

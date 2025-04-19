@@ -122,36 +122,13 @@ body {
   // opacity: 0.5;
   box-sizing: border-box;
   padding: 10px 10px;
-  // display: flex;
-  display: none;
+  display: flex;
+  // display: none;
+  opacity: 0;
   justify-content: space-between;
   align-items: flex-start;
   transform: translateX(120%);
-}
-
-.pop-alert {
-  animation-name: showAlert;
-  animation-duration: 600ms;
-  animation-fill-mode: forwards;
-}
-
-.pop-alert-reverse {
-  animation-direction: reverse;
-  animation-name: showAlert;
-  animation-duration: 600ms;
-  animation-fill-mode: forwards;
-}
-
-.show-alert {
-  display: flex;
-}
-
-.alert-success {
-  display: flex !important;
-}
-
-.alert-error {
-  display: flex !important;
+  transition: transform 100ms linear;
 }
 
 .alert-close-btn {
@@ -179,7 +156,7 @@ body {
   width: max-content;
   min-height: 50px;
   height: auto;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 50px;
@@ -201,6 +178,24 @@ body {
   color: $description-color;
   font-size: 15px;
   margin-right: 10px;
+}
+
+.form-spinner {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  padding-right: 2rem;
+}
+
+.form-spinner-icon {
+  height: 55%;
+  aspect-ratio: 1/1;
 }
 
 .show-element {
