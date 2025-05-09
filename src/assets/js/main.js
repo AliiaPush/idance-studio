@@ -433,7 +433,7 @@ function contact() {
       form.append("subject", subject.value);
       form.append("message", message.value);
 
-      let request = await fetch("https://idance-studio-mailer.vercel.app/api/index.php", {
+      let request = await fetch("http://idance-studio-mailer-livid.vercel.app/api/index.php", {
         method: "POST",
         body: form,
       });
@@ -477,7 +477,7 @@ function register() {
       form.append("email", email.value);
       form.append("message", message.value);
 
-      let request = await fetch("https://idance-studio-mailer.vercel.app/api/index.php", {
+      let request = await fetch("http://idance-studio-mailer-livid.vercel.app/api/index.php", {
         method: "POST",
         body: form,
       });
