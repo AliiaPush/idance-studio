@@ -4,8 +4,8 @@ title:
   de: Donnerstag
 dayNo: 4
 location:
-  en: ERBENDORF (FRÜHMEßGASSE 15 - SPORTHALLE)
-  de: ERBENDORF (FRÜHMEßGASSE 15 - SPORTHALLE)
+  en: ERBENDORF (ALTENSTÄDTER STR. 6 - SPORTHALLE)
+  de: ERBENDORF (ALTENSTÄDTER STR. 6 - SPORTHALLE)
 classes:
   - time: 14.00 - 14.45
     description:
