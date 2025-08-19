@@ -9,8 +9,8 @@ location:
 classes:
   - time: 13.30 - 14.15
     description:
-      en: Minis (Age Group 4 - 5)
-      de: Minis (ab 3 Jahren)
+      en: Minis (Age Group 4 - 6)
+      de: Minis (ab 4 Jahren)
   - time: 14.15 - 15.00
     description:
       en: Minies (Age Group 4 - 6)
