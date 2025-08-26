@@ -5,8 +5,8 @@ title:
 img: /assets/images/news/aufführung-alina-s-100.jpg
 description:
   de: >-
-    Am 31. Mai war es endlich so weit: Unser erstes eigenes Tanzspektakel wurde
-    auf die Bühne
+    Am **31. Mai 2025** war es endlich so weit: Unser erstes eigenes
+    Tanzspektakel wurde auf die Bühne
 
     gebracht – mit viel Herzblut, Fantasie und ganz viel Freude!
 
@@ -33,8 +33,8 @@ description:
 
     Nach drei Jahren Idance Studio sind wir einfach dankbar und stolz, dass wir diesen Traum wahr machen konnten – und hoffen, dass solche Konzerte künftig zu einer kleinen Tradition werden.
   en: >-
-    On May 31, the moment finally arrived: our very first dance spectacle came
-    to life on stage – full of passion, imagination, and joy!
+    On **May 31, 2025,** the moment finally arrived: our very first dance
+    spectacle came to life on stage – full of passion, imagination, and joy!
 
 
     The dance fairy tale **“Where Dreams Live”** tells the story of a little girl who travels in her sleep to a magical world full of wonders. On her journey to find friendship, she meets dancing flowers, butterflies, funny ghosts, and a wise fairy – but also dark shadows that she can overcome only with courage and hope. In the end, she discovers what she wished for most: new friends, light, and joy.
