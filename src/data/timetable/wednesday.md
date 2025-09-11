@@ -7,6 +7,10 @@ location:
   en: WINDISCHESCHENBACH (WINTERLING-PORZELLAN-STRAßE 25)
   de: WINDISCHESCHENBACH (WINTERLING-PORZELLAN-STRAßE 25)
 classes:
+  - time: 14.15 - 15.00
+    description:
+      en: Minis (Age Group 3 - 4)
+      de: Minis (ab 3 Jahren)
   - time: 15.00 - 15.45
     description:
       en: Minis (Age Group 4 - 6)
@@ -23,8 +27,4 @@ classes:
     description:
       en: High Heels (Adults)
       de: High Heels (Erwachsene)
-  - time: 14.15 - 15.00
-    description:
-      en: Minis (Age Group 3 - 4)
-      de: Minis (ab 3 Jahren)
 ---
