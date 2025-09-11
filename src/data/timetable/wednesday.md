@@ -9,8 +9,8 @@ location:
 classes:
   - time: 14.15 - 15.00
     description:
-      en: Minis (Age Group 3 - 4)
-      de: Minis (ab 3 Jahren)
+      en: Minis (Age Group 3 - 4) Coming September 2025!
+      de: Minis (ab 3 Jahren) Neu ab September 2025!
   - time: 15.00 - 15.45
     description:
       en: Minis (Age Group 4 - 6)
