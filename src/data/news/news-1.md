@@ -1,4 +1,5 @@
 ---
+date: 2025-02-10
 title:
   en: "Check out the exciting events happening in the region!"
   de: "Sehen Sie sich die spannenden Ereignisse in der Region an!"

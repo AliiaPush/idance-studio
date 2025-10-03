@@ -1,4 +1,5 @@
 ---
+date: 2025-08-26
 title:
   de: "3 Jahre Idance Studio – und unser erstes großes Tanzmärchen! "
   en: "3 Years of Idance Studio – and our very first big Dance Fairy Tale! "

@@ -1,4 +1,5 @@
 ---
+date: 2025-03-10
 title:
   en: Dance Performance - 31 Mai
   de: Tanzaufführung - 31. Mai

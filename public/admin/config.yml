@@ -134,6 +134,11 @@ collections:
     media_folder: "/public/assets/images/news"
     public_folder: "/assets/images/news"
     fields:
+      - label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        default: { { commit_date } }
       - label: "Title"
         name: "title"
         widget: "object"

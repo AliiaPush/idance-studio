@@ -1,4 +1,5 @@
 ---
+date: 2025-02-11
 title:
   en: "Loads of entertainment at the Störnstein Children's Carnival"
   de: "Jede Menge Showprogramm beim Störnsteiner Kinderfasching"

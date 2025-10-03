@@ -6,7 +6,7 @@
         </div>
         <div class="news-display">
             <div class="news-navigators">
-                {% for item in collections.news %}
+                {% for item in collections.news | sortByDate %}
                 <!-- news navigator  -->
                 <div data-lazy-load data-news-navigator="{{ loop.index }}" class="news-navigator {% if loop.index == 1 %}active-news{% endif %}">
                     <div class="news-navigator-icon-container">
@@ -26,7 +26,7 @@
                 {% endfor %}
             </div>
             <!-- news  -->
-            {% set defaultNews = collections.news | first %}
+            {% set defaultNews = collections.news | sortByDate | first %}
             <div data-lazy-load class="news-container">
                 <div class="news-skeleton">
                     <div class="news-skeleton-img"></div>

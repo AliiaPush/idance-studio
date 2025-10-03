@@ -12,6 +12,9 @@ module.exports = async function (eleventyConfig) {
     eleventyConfig.addFilter("sortByDay", function (collection) {
         return collection.sort((a, b) => a.data.dayNo - b.data.dayNo);
     });
+    eleventyConfig.addFilter("sortByDate", function (collection) {
+        return collection.sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
+    });
 
     let markdownLib = markdownIt({ html: true });
 

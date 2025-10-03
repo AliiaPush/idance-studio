@@ -87,7 +87,7 @@ const lang = {
                     "title":"Minis",
                     "content":`<p>In this course, children embark on a magical journey full of movement and imagination. We playfully promote the fundamentals of dance and rhythm. Through our courses, children develop their coordination, flexibility, and musical sensitivity. This early dance development lays the foundation for various dance styles such as classical ballet and modern dance genres.</p>
 `,
-                    "age": "3-6 years",
+                    "age": "3-6 years ",
                     "price": "29 Euros per month"
 
                 }
@@ -132,16 +132,6 @@ const lang = {
             "data": {
                 
                 0:{
-                    "title":"Dance Performance - 31 Mai",
-                    "content":`<p>It’s finally happening – our very first full performance as a dance group!
-After taking part in other concerts, we now invite you to <strong>our own dance show</strong>.
-We are excited to present our dance performance titled <strong>“The Magical Land of Dreams”</strong>.
-Join us on <strong>May 31, 2025</strong>, and step into a world of magic, movement, and imagination.
-We can’t wait to see you there!</p>
-`
-                }
-                ,
-                1:{
                     "title":"Check out the exciting events happening in the region!",
                     "content":`<p>We cordially invite you to participate in the exciting events happening in the coming months. Make sure to mark these important dates in your calendar:</p>
 <ul>
@@ -159,7 +149,7 @@ We can’t wait to see you there!</p>
 `
                 }
                 ,
-                2:{
+                1:{
                     "title":"Loads of entertainment at the Störnstein Children's Carnival",
                     "content":`<p>On February 2nd, we had the pleasure of performing at the Carnival in Störnstein. We showcased two dances: a spring dance and a cheerleader dance. It brought us great joy to showcase our talents and entertain the audience.</p>
 <p>The children were thrilled to perform and showcase themselves, and we were overwhelmed by the positive response from the audience. It was heartwarming to see so many friendly faces cheering us on.</p>
@@ -168,7 +158,7 @@ We can’t wait to see you there!</p>
 `
                 }
                 ,
-                3:{
+                2:{
                     "title":"Welcome to our new dance studio in Windischeschenbach!",
                     "content":`<p>We are delighted to announce that since January 2024, our dance studio has been open in Windischeschenbach to expand our student community and share our passion for dance. Our studio is already successfully operating in Sternstein and Erbendorf, and we look forward to welcoming talented new dancers into our family.</p>
 <p>Classes will be held every Wednesday according to the following schedule:</p>
@@ -196,6 +186,30 @@ We can’t wait to see you there!</p>
 </li>
 </ul>
 <p>We take pride in supporting your children's development in the world of dance and helping them unleash their creative potential. We look forward to meeting new students and sharing the joy and inspiration of the art of dance with them. See you soon in our classes!</p>
+`
+                }
+                ,
+                3:{
+                    "title":"Dance Performance - 31 Mai",
+                    "content":`<p>It’s finally happening – our very first full performance as a dance group!
+After taking part in other concerts, we now invite you to <strong>our own dance show</strong>.
+We are excited to present our dance performance titled <strong>“The Magical Land of Dreams”</strong>.
+Join us on <strong>May 31, 2025</strong>, and step into a world of magic, movement, and imagination.
+We can’t wait to see you there!</p>
+`
+                }
+                ,
+                4:{
+                    "title":"3 Years of Idance Studio – and our very first big Dance Fairy Tale! ",
+                    "content":`<p>On <strong>May 31, 2025,</strong> the moment finally arrived: our very first dance spectacle came to life on stage – full of passion, imagination, and joy!</p>
+<p>The dance fairy tale <strong>“Where Dreams Live”</strong> tells the story of a little girl who travels in her sleep to a magical world full of wonders. On her journey to find friendship, she meets dancing flowers, butterflies, funny ghosts, and a wise fairy – but also dark shadows that she can overcome only with courage and hope. In the end, she discovers what she wished for most: new friends, light, and joy.</p>
+<p>We are incredibly proud of our dancers, who performed with such dedication, perseverance, and love for dance. For months they practiced, grew, and finally enchanted the audience with true stage magic!</p>
+<p>A big thank-you goes to:</p>
+<p>• all parents – for your support, trust, and behind-the-scenes help
+• Kathrin Petese – for the many beautiful costumes
+• our amazing team – for organization, technology, patience, and attention to detail
+• our audience – for being there, cheering, and applauding</p>
+<p>After three years of Idance Studio, we are simply grateful and proud that we could make this dream come true – and we hope to turn concerts like this into a beloved annual tradition.</p>
 `
                 }
                 
@@ -304,7 +318,7 @@ We can’t wait to see you there!</p>
                         
                         "0": {
                             "time": "13.30 - 14.15",
-                            "description": "Minis (Age Group 3 - 5)",
+                            "description": "Minis (Age Group 4 - 6)",
                             "location": ""
                         }
                         ,
@@ -337,18 +351,24 @@ We can’t wait to see you there!</p>
                 ,
                 4: {
                     "title": "Thursday",
-                    "address": "ERBENDORF (FRÜHMEßGASSE 15 - SPORTHALLE)",
+                    "address": "ERBENDORF (ALTENSTÄDTER STR. 6 - SPORTHALLE)",
                     "rows": {
                         
                         "0": {
-                            "time": "14.00 - 14.45",
-                            "description": "Minis (Age Group 4 - 6)",
+                            "time": "14.15 - 15.00",
+                            "description": "Minis (Age Group 3 - 6)",
                             "location": ""
                         }
                         ,
                         "1": {
                             "time": "15.00 - 16.00",
-                            "description": "Kids (Age Group 6 - 9)",
+                            "description": "Kids (Age Group 6 - 7)",
+                            "location": ""
+                        }
+                        ,
+                        "2": {
+                            "time": "16:00 - 17:00",
+                            "description": "Kids (Age Group 8 - 10)",
                             "location": ""
                         }
                         
@@ -361,26 +381,58 @@ We can’t wait to see you there!</p>
                     "rows": {
                         
                         "0": {
+                            "time": "14.15 - 15.00",
+                            "description": "Minis (Age Group 3 - 4) Coming September 2025!",
+                            "location": ""
+                        }
+                        ,
+                        "1": {
                             "time": "15.00 - 15.45",
                             "description": "Minis (Age Group 4 - 6)",
                             "location": ""
                         }
                         ,
-                        "1": {
+                        "2": {
                             "time": "16.00 - 17.00",
                             "description": "Kids (Age Group 6 - 9)",
                             "location": ""
                         }
                         ,
-                        "2": {
+                        "3": {
                             "time": "17.00 - 18.00",
                             "description": "Teens (Age Group 9 - 16)",
                             "location": ""
                         }
                         ,
-                        "3": {
+                        "4": {
                             "time": "18.00 – 19.00",
                             "description": "High Heels (Adults)",
+                            "location": ""
+                        }
+                        
+                    }
+                }
+                ,
+                1: {
+                    "title": "Monday",
+                    "address": "STÖRNSTEIN (FLOßER STR. 25B - RATHAUS)",
+                    "rows": {
+                        
+                        "0": {
+                            "time": "13:30 - 14:15",
+                            "description": "Minis (Age Group 3 - 4) Coming September 2025!",
+                            "location": ""
+                        }
+                        ,
+                        "1": {
+                            "time": "14:15 - 15:00",
+                            "description": "Minis (Age Group 4 - 5)",
+                            "location": ""
+                        }
+                        ,
+                        "2": {
+                            "time": "15:00 - 16:00",
+                            "description": "Kids (Age Group 6 - 7)",
                             "location": ""
                         }
                         
@@ -652,16 +704,6 @@ Die für den Kontakt zur Verfügung stehenden Sprachen sind: Deutsch, Englisch. 
             "data": {
                 
                 0:{
-                    "title":"Tanzaufführung - 31. Mai",
-                    "content":`<p>Endlich ist es soweit – unser allererstes eigenes Bühnenprogramm als Tanzgruppe!
-Nach mehreren Auftritten in anderen Konzerten laden wir euch nun zu <strong>unserer eigenen Tanzshow</strong> ein.
-Wir präsentieren mit großer Freude unser Tanztheater <strong>„Das magische Traumland“</strong>.
-Kommt am <strong>31. Mai 2025</strong> vorbei und taucht ein in eine Welt voller Magie, Bewegung und Fantasie.
-Wir freuen uns auf euch!</p>
-`
-                }
-                ,
-                1:{
                     "title":"Sehen Sie sich die spannenden Ereignisse in der Region an!",
                     "content":`<p>Wir laden Sie herzlich ein, an den aufregenden Veranstaltungen teilzunehmen, die in den kommenden Monaten stattfinden werden. Markieren Sie sich die folgenden wichtigen Termine in Ihrem Kalender:</p>
 <ul>
@@ -679,7 +721,7 @@ Wir freuen uns auf euch!</p>
 `
                 }
                 ,
-                2:{
+                1:{
                     "title":"Jede Menge Showprogramm beim Störnsteiner Kinderfasching",
                     "content":`<p>Am 2. Februar hatten wir die Freude, beim Karneval in Störnstein aufzutreten. Wir präsentierten zwei Tänze: einen Frühlingstanz und einen Tanz der Cheerleader. Es bereitete uns große Freude, unsere Talente zu zeigen und das Publikum zu unterhalten.</p>
 <p>Die Kinder waren begeistert, sich zu präsentieren, und wir waren überwältigt von der positiven Resonanz des Publikums. Es war schön zu sehen, wie viele freundliche Gesichter uns anfeuerten.</p>
@@ -688,7 +730,7 @@ Wir freuen uns auf euch!</p>
 `
                 }
                 ,
-                3:{
+                2:{
                     "title":"Willkommen in unserem neuen Tanzstudio in Windischeschenbach!",
                     "content":`<p>Wir freuen uns, Ihnen mitteilen zu können, dass unser Tanzstudio seit Januar 2024 in Windischeschenbach geöffnet ist, um unseren Schülerkreis zu erweitern und unsere Leidenschaft für Tanz zu teilen. Unser Studio ist bereits erfolgreich in Störnstein und Erbendorf tätig, und wir freuen uns darauf, talentierte neue Tänzer in unserer Familie begrüßen zu dürfen.</p>
 <p>Die Kurse finden jeden Mittwoch nach folgendem Zeitplan statt:</p>
@@ -716,6 +758,32 @@ Wir freuen uns auf euch!</p>
 </li>
 </ul>
 <p>Wir sind stolz darauf, die Entwicklung Ihrer Kinder in der Welt des Tanzes zu unterstützen und ihnen zu helfen, ihr kreatives Potenzial zu entfalten. Wir freuen uns darauf, neue Schüler zu treffen und mit ihnen die Freude und Inspiration der Tanzkunst zu teilen. Wir sehen uns bald auf unseren Kursen!</p>
+`
+                }
+                ,
+                3:{
+                    "title":"Tanzaufführung - 31. Mai",
+                    "content":`<p>Endlich ist es soweit – unser allererstes eigenes Bühnenprogramm als Tanzgruppe!
+Nach mehreren Auftritten in anderen Konzerten laden wir euch nun zu <strong>unserer eigenen Tanzshow</strong> ein.
+Wir präsentieren mit großer Freude unser Tanztheater <strong>„Das magische Traumland“</strong>.
+Kommt am <strong>31. Mai 2025</strong> vorbei und taucht ein in eine Welt voller Magie, Bewegung und Fantasie.
+Wir freuen uns auf euch!</p>
+`
+                }
+                ,
+                4:{
+                    "title":"3 Jahre Idance Studio – und unser erstes großes Tanzmärchen! ",
+                    "content":`<p>Am <strong>31. Mai 2025</strong> war es endlich so weit: Unser erstes eigenes Tanzspektakel wurde auf die Bühne
+gebracht – mit viel Herzblut, Fantasie und ganz viel Freude!</p>
+<p>Das Tanzmärchen <strong>„Wo Träume leben“</strong> erzählt von einem kleinen Mädchen, das im Traum in eine zauberhafte Welt voller Wunder reist. Auf der Suche nach Freundschaft begegnet sie tanzenden Blumen, Schmetterlingen,
+lustigen Gespenstern und einer weisen Fee – aber auch dunklen Schatten, die sie nur mit Mut und Hoffnung überwinden kann. Am Ende findet sie das, was sie sich von Herzen gewünscht hat: neue Freunde, Licht und Freude.</p>
+<p>Wir sind unglaublich stolz auf unsere Tänzerinnen und Tänzer, die mit so viel Hingabe, Ausdauer und Leidenschaft dabei waren. Viele Monate lang haben sie geprobt, sich entwickelt – und am Tag der Aufführung mit echtem Bühnenzauber begeistert!</p>
+<p>Ein herzliches Dankeschön geht an:</p>
+<p>* alle Eltern – für Unterstützung, Vertrauen und Hilfe hinter den Kulissen
+* Kathrin Petese –für die vielen wunderschönen Kostüme
+* unser großartiges Team – für Organisation, Technik, Nerven und Liebe zum Detail
+*  unser Publikum – fürs Dabeisein, Mitfiebern und Applaudieren!</p>
+<p>Nach drei Jahren Idance Studio sind wir einfach dankbar und stolz, dass wir diesen Traum wahr machen konnten – und hoffen, dass solche Konzerte künftig zu einer kleinen Tradition werden.</p>
 `
                 }
                 
@@ -824,7 +892,7 @@ Wir freuen uns auf euch!</p>
                         
                         "0": {
                             "time": "13.30 - 14.15",
-                            "description": "Minis (ab 3 Jahren)",
+                            "description": "Minis (ab 4 Jahren)",
                             "location": ""
                         }
                         ,
@@ -857,18 +925,24 @@ Wir freuen uns auf euch!</p>
                 ,
                 4: {
                     "title": "Donnerstag",
-                    "address": "ERBENDORF (FRÜHMEßGASSE 15 - SPORTHALLE)",
+                    "address": "ERBENDORF (ALTENSTÄDTER STR. 6 - SPORTHALLE)",
                     "rows": {
                         
                         "0": {
-                            "time": "14.00 - 14.45",
-                            "description": "Minis (ab 4 Jahren)",
+                            "time": "14.15 - 15.00",
+                            "description": "Minis (ab 3 Jahren)",
                             "location": ""
                         }
                         ,
                         "1": {
                             "time": "15.00 - 16.00",
-                            "description": "Kids (ab 6 Jahren)",
+                            "description": "Kids (6-7 Jahren)",
+                            "location": ""
+                        }
+                        ,
+                        "2": {
+                            "time": "16:00 - 17:00",
+                            "description": "Kids (8-10 Jahren)",
                             "location": ""
                         }
                         
@@ -881,26 +955,58 @@ Wir freuen uns auf euch!</p>
                     "rows": {
                         
                         "0": {
+                            "time": "14.15 - 15.00",
+                            "description": "Minis (ab 3 Jahren) Neu ab September 2025!",
+                            "location": ""
+                        }
+                        ,
+                        "1": {
                             "time": "15.00 - 15.45",
                             "description": "Minis (ab 4 Jahren)",
                             "location": ""
                         }
                         ,
-                        "1": {
+                        "2": {
                             "time": "16.00 - 17.00",
                             "description": "Kids (ab 6 Jahren)",
                             "location": ""
                         }
                         ,
-                        "2": {
+                        "3": {
                             "time": "17.00 - 18.00",
                             "description": "Teens (ab 9 Jahren)",
                             "location": ""
                         }
                         ,
-                        "3": {
+                        "4": {
                             "time": "18.00 – 19.00",
                             "description": "High Heels (Erwachsene)",
+                            "location": ""
+                        }
+                        
+                    }
+                }
+                ,
+                1: {
+                    "title": "Montag",
+                    "address": "STÖRNSTEIN (FLOßER STR. 25B - RATHAUS)",
+                    "rows": {
+                        
+                        "0": {
+                            "time": "13:30 - 14:15",
+                            "description": "Minis (3 - 4 Jahren) Neu ab September 2025!",
+                            "location": ""
+                        }
+                        ,
+                        "1": {
+                            "time": "14:15 - 15:00",
+                            "description": "Minis (4 - 5 Jahren) ",
+                            "location": ""
+                        }
+                        ,
+                        "2": {
+                            "time": "15:00 - 16:00",
+                            "description": "Kids (ab 6 Jahren)",
                             "location": ""
                         }
                         

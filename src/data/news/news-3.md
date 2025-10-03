@@ -1,4 +1,5 @@
 ---
+date: 2025-02-12
 title:
   en: "Welcome to our new dance studio in Windischeschenbach!"
   de: "Willkommen in unserem neuen Tanzstudio in Windischeschenbach!"
