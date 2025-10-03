@@ -138,7 +138,6 @@ collections:
         name: "date"
         widget: "datetime"
         format: "YYYY-MM-DD"
-        format: "YYYY-MM-DD"
         date_format: "YYYY-MM-DD"
         time_format: false
         default: { { commit_date } }
