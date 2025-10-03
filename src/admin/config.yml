@@ -136,7 +136,7 @@ collections:
     fields:
       - label: "Date"
         name: "date"
-        widget: "datetime"
+        widget: "date"
         format: "YYYY-MM-DD"
         default: { { commit_date } }
       - label: "Title"
