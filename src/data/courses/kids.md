@@ -1,4 +1,5 @@
 ---
+order: 2
 topic:
   en: "Kids"
   de: "Kids"

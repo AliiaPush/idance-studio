@@ -7,7 +7,7 @@
         </div>
         <!-- page topic  -->
         <div class="courses">
-            {% for item in collections.courses %}
+            {% for item in collections.courses | sortByOrder %}
             <!-- course  -->
             <div data-lazy-load class="course {{ item.data.courseClass }}">
                 <div class="course-topic-container">

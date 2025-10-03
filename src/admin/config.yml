@@ -67,6 +67,9 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     identifier_field: "topic.en"
     fields:
+      - label: "Order"
+        name: "order"
+        widget: "number"
       - label: "Topic"
         name: "topic"
         widget: "object"

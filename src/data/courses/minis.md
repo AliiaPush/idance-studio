@@ -1,4 +1,5 @@
 ---
+order: 1
 topic:
   en: Minis
   de: Minis

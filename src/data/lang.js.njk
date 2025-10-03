@@ -48,7 +48,7 @@ const lang = {
             "price": "{% for item in collections.navigations %}{{item.data.price[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
             "timetable": "{% for item in collections.navigations %}{{item.data.timetable[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
             "data": {
-                {% for item in collections.courses %}
+                {% for item in collections.courses | sortByOrder %}
                 {{ loop.index0 }}:{
                     "title":"{{item.data.topic[lang] | safe}}",
                     "content":`{{item.data.description[lang] | markdownify | safe}}`,
@@ -74,7 +74,7 @@ const lang = {
         "news": {
             "title":"{% for item in collections.navigations %}{{item.data.news[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
             "data": {
-                {% for item in collections.news %}
+                {% for item in collections.news | sortByDate %}
                 {{ loop.index0 }}:{
                     "title":"{{item.data.title[lang] | safe}}",
                     "content":`{{item.data.description[lang] | markdownify | safe}}`
@@ -159,7 +159,7 @@ const lang = {
             "time": "{% for item in collections.navigations %}{{item.data.time[lang] | safe}}{% endfor %}",
             "description": "{% for item in collections.navigations %}{{item.data.description[lang] | safe}}{% endfor %}",
             "data": {
-                {% for item in collections.timetable %}
+                {% for item in collections.timetable | sortByDay %}
                 {{ item.data.dayNo }}: {
                     "title": "{{item.data.title[lang] | safe}}",
                     "address": "{{item.data.location[lang] | safe}}",
