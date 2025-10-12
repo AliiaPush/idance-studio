@@ -27,4 +27,8 @@ classes:
     description:
       en: High Heels (Adults)
       de: High Heels (Erwachsene)
+  - time: 19:00 - 20:00
+    description:
+      en: Contemporary (Adults, block course)
+      de: Contemporary (Erwachsene, Blockkurs)
 ---
