@@ -7,8 +7,8 @@ ageGroup:
   en: "3-6 years "
   de: 3-6 Jahre
 price:
-  en: 29 Euros per month
-  de: 29 Euro pro Monat
+  en: 30 Euros per month
+  de: 30 Euro pro Monat
 courseClass: course-first
 description:
   en: >
