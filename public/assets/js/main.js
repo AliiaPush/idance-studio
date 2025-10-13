@@ -1,4 +1,7 @@
 import lang from "./lang.js";
+
+const emailEndpoint = "https://idance-studio-mailer-livid.vercel.app/api/index.php";
+
 function spinner() {
   document.onreadystatechange = async () => {
     if (document.readyState === "complete") {
@@ -433,7 +436,7 @@ function contact() {
       form.append("subject", subject.value);
       form.append("message", message.value);
 
-      let request = await fetch("https://idance-studio-mailer-livid.vercel.app/api/index.php", {
+      let request = await fetch(emailEndpoint, {
         method: "POST",
         body: form,
       });
@@ -477,7 +480,7 @@ function register() {
       form.append("email", email.value);
       form.append("message", message.value);
 
-      let request = await fetch("https://idance-studio-mailer-livid.vercel.app/api/index.php", {
+      let request = await fetch(emailEndpoint, {
         method: "POST",
         body: form,
       });
