@@ -23,7 +23,7 @@ description:
 
 
     We will do everything possible to ensure that your child or you yourself can dance as close to home as possible.
-  de: >
+  de: >-
     Wir haben unsere Arbeit im Jahr 2022 begonnen und betreiben bis heute an
     drei Standorten:
 
@@ -35,7 +35,7 @@ description:
     * Erbendorf
 
 
-    Wir haben bereits über **100 Kinder**, die bei uns tanzen.
+    Wir haben bereits über **150 Kinder**, die bei uns tanzen.
 
 
     Wir sind bereit für eine Erweiterung. Wenn Sie möchten, dass unser Studio in Ihrer Nähe tätig wird, nehmen Sie einfach Kontakt mit uns auf.
