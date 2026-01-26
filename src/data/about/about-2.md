@@ -15,6 +15,8 @@ description:
 
     * Erbendorf
 
+    * Floß
+
 
     We have over **150 children** dancing with us already.
 
@@ -33,6 +35,8 @@ description:
     * Windischeschenbach
 
     * Erbendorf
+
+    * Floß
 
 
     Wir haben bereits über **150 Kinder**, die bei uns tanzen.
