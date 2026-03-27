@@ -9,8 +9,8 @@ location:
 classes:
   - time: 14.15 - 15.00
     description:
-      en: Minis (Age Group 3 - 4) Coming September 2025!
-      de: Minis (ab 3 Jahren) Neu ab September 2025!
+      en: "Minis (Age Group 3 - 4) "
+      de: Minis (ab 3 Jahren)
   - time: 15.00 - 15.45
     description:
       en: Minis (Age Group 4 - 6)
@@ -27,4 +27,8 @@ classes:
     description:
       en: High Heels (Adults)
       de: High Heels (Erwachsene)
+  - time: 19:00 - 20:00
+    description:
+      en: Contemporary (Adults, block course)
+      de: Contemporary (Erwachsene, Blockkurs)
 ---
