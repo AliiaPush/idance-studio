@@ -327,6 +327,10 @@ We can’t wait to see you there!</p>
                     "title": "Mobile number",
                     "placeholder": "Type your mobile number here"
                 },
+                "age": {
+                    "title": "Age",
+                    "placeholder": "Type your age here"
+                },
                 "email": {
                     "title": "Email",
                     "placeholder": "Type your email here"
@@ -961,6 +965,10 @@ Wir freuen uns auf euch!</p>
                 "mobile": {
                     "title": "Handynummer",
                     "placeholder": "Geben Sie hier Ihre Handynummer ein"
+                },
+                "age": {
+                    "title": "Age",
+                    "placeholder": "Type your age here"
                 },
                 "email": {
                     "title": "Email",
