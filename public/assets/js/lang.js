@@ -44,8 +44,9 @@ const lang = {
 <li>Störnstein</li>
 <li>Windischeschenbach</li>
 <li>Erbendorf</li>
+<li>Floß</li>
 </ul>
-<p>We have over <strong>100 children</strong> dancing with us already.</p>
+<p>We have over <strong>150 children</strong> dancing with us already.</p>
 <p>We are ready for expansion. If you'd like our studio to start operating near you, just get in touch with us.</p>
 <p>We will do everything possible to ensure that your child or you yourself can dance as close to home as possible.</p>
 `
@@ -60,7 +61,7 @@ const lang = {
 <li>elementary school (age 6-9),</li>
 <li>teenagers (age 10-16).</li>
 </ul>
-<p>Additionally, we have a course for adults.</p>
+<p>Additionally, we offer courses for adults (Contemporary and High Heels).</p>
 <p>We welcome anyone who wants to dance with us.</p>
 `
                 }
@@ -80,7 +81,7 @@ const lang = {
                     "content":`<p>In this course, children embark on a magical journey full of movement and imagination. We playfully promote the fundamentals of dance and rhythm. Through our courses, children develop their coordination, flexibility, and musical sensitivity. This early dance development lays the foundation for various dance styles such as classical ballet and modern dance genres.</p>
 `,
                     "age": "3-6 years ",
-                    "price": "29 Euros per month"
+                    "price": "30 Euros per month"
 
                 }
                 ,
@@ -89,7 +90,7 @@ const lang = {
                     "content":`<p>This course is designed for elementary school children who enjoy dancing, moving, and expressing themselves through dance. In this course, we help children develop their dance skills, unleash their creative abilities, and learn to listen to music and express themselves through it. We focus on modern dance but also provide children with the opportunity to explore the fundamentals of ballet.</p>
 `,
                     "age": "6-9 years",
-                    "price": "29 Euros per month"
+                    "price": "30 Euros per month"
 
                 }
                 ,
@@ -98,7 +99,7 @@ const lang = {
                     "content":`<p>For teenagers, we offer various dance styles including modern choreography, contemporary dance, and jazz. We aim to provide teenagers with the opportunity to unleash their creativity, express their uniqueness through dance, and simultaneously enhance their physical health, coordination, and flexibility. In our welcoming atmosphere, we encourage self-expression, confidence, and a sense of community among young dancers.</p>
 `,
                     "age": "10-16 years",
-                    "price": "29 Euros per month"
+                    "price": "30 Euros per month"
 
                 }
                 
@@ -133,6 +134,24 @@ const lang = {
             "data": {
                 
                 0:{
+                    "title":"Idance Studio is now in Floß!",
+                    "content":`<p>We are excited to announce that <strong>Idance Studio</strong> is now offering classes in <strong>Floß</strong>! Starting this Tuesday
+December 2, 2025 we’re launching two new children’s groups.</p>
+<h3><strong>Our New Classes in Floß</strong></h3>
+<p><strong>🧚 2:15–3:00 PM – Early Dance Education (ages 4+)</strong></p>
+<p>Playful movement, motor skills, imagination, and musical awareness.</p>
+<p><strong>🌟 3:00–4:00 PM – Contemporary / Modern Dance (ages 6+)</strong></p>
+<p>Creative movement, expression, technique, and lots of joy in dancing.</p>
+<h3><strong>Special Opening Offer in December</strong></h3>
+<p>All children are invited to join a <strong>free trial class</strong>.</p>
+<p>After that, you can train <strong>for the entire month of December at no cost</strong> – the perfect way to get to know us and try everything out comfortably.</p>
+<h3><strong>Registration</strong></h3>
+<p>If you’re interested, simply send us a message – we’re excited to meet you!</p>
+<p><strong>Let’s dance together! 💜</strong></p>
+`
+                }
+                ,
+                1:{
                     "title":"3 Years of Idance Studio – and our very first big Dance Fairy Tale! ",
                     "content":`<p>On <strong>May 31, 2025,</strong> the moment finally arrived: our very first dance spectacle came to life on stage – full of passion, imagination, and joy!</p>
 <p>The dance fairy tale <strong>“Where Dreams Live”</strong> tells the story of a little girl who travels in her sleep to a magical world full of wonders. On her journey to find friendship, she meets dancing flowers, butterflies, funny ghosts, and a wise fairy – but also dark shadows that she can overcome only with courage and hope. In the end, she discovers what she wished for most: new friends, light, and joy.</p>
@@ -146,7 +165,7 @@ const lang = {
 `
                 }
                 ,
-                1:{
+                2:{
                     "title":"Dance Performance - 31 Mai",
                     "content":`<p>It’s finally happening – our very first full performance as a dance group!
 After taking part in other concerts, we now invite you to <strong>our own dance show</strong>.
@@ -156,7 +175,7 @@ We can’t wait to see you there!</p>
 `
                 }
                 ,
-                2:{
+                3:{
                     "title":"Welcome to our new dance studio in Windischeschenbach!",
                     "content":`<p>We are delighted to announce that since January 2024, our dance studio has been open in Windischeschenbach to expand our student community and share our passion for dance. Our studio is already successfully operating in Sternstein and Erbendorf, and we look forward to welcoming talented new dancers into our family.</p>
 <p>Classes will be held every Wednesday according to the following schedule:</p>
@@ -187,7 +206,7 @@ We can’t wait to see you there!</p>
 `
                 }
                 ,
-                3:{
+                4:{
                     "title":"Loads of entertainment at the Störnstein Children's Carnival",
                     "content":`<p>On February 2nd, we had the pleasure of performing at the Carnival in Störnstein. We showcased two dances: a spring dance and a cheerleader dance. It brought us great joy to showcase our talents and entertain the audience.</p>
 <p>The children were thrilled to perform and showcase themselves, and we were overwhelmed by the positive response from the audience. It was heartwarming to see so many friendly faces cheering us on.</p>
@@ -196,7 +215,7 @@ We can’t wait to see you there!</p>
 `
                 }
                 ,
-                4:{
+                5:{
                     "title":"Check out the exciting events happening in the region!",
                     "content":`<p>We cordially invite you to participate in the exciting events happening in the coming months. Make sure to mark these important dates in your calendar:</p>
 <ul>
@@ -335,7 +354,7 @@ We can’t wait to see you there!</p>
                         
                         "0": {
                             "time": "13:30 - 14:15",
-                            "description": "Minis (Age Group 3 - 4) Coming September 2025!",
+                            "description": "Minis (Age Group 3 - 4) ",
                             "location": ""
                         }
                         ,
@@ -354,6 +373,26 @@ We can’t wait to see you there!</p>
                     }
                 }
                 ,
+                2: {
+                    "title": "Tuesday",
+                    "address": "FLOß (SCHULSTRAßE 14)",
+                    "rows": {
+                        
+                        "0": {
+                            "time": "14.15 - 15.00",
+                            "description": "Minis (Age Group 4 - 6) ",
+                            "location": ""
+                        }
+                        ,
+                        "1": {
+                            "time": "15.00 - 16.00",
+                            "description": "Kids (Age Group 6 - 10) ",
+                            "location": ""
+                        }
+                        
+                    }
+                }
+                ,
                 3: {
                     "title": "Wednesday",
                     "address": "WINDISCHESCHENBACH (WINTERLING-PORZELLAN-STRAßE 25)",
@@ -361,7 +400,7 @@ We can’t wait to see you there!</p>
                         
                         "0": {
                             "time": "14.15 - 15.00",
-                            "description": "Minis (Age Group 3 - 4) Coming September 2025!",
+                            "description": "Minis (Age Group 3 - 4) ",
                             "location": ""
                         }
                         ,
@@ -386,6 +425,12 @@ We can’t wait to see you there!</p>
                         "4": {
                             "time": "18.00 – 19.00",
                             "description": "High Heels (Adults)",
+                            "location": ""
+                        }
+                        ,
+                        "5": {
+                            "time": "19:00 - 20:00",
+                            "description": "Contemporary (Adults, block course)",
                             "location": ""
                         }
                         
@@ -633,8 +678,9 @@ Die für den Kontakt zur Verfügung stehenden Sprachen sind: Deutsch, Englisch. 
 <li>Störnstein</li>
 <li>Windischeschenbach</li>
 <li>Erbendorf</li>
+<li>Floß</li>
 </ul>
-<p>Wir haben bereits über <strong>100 Kinder</strong>, die bei uns tanzen.</p>
+<p>Wir haben bereits über <strong>150 Kinder</strong>, die bei uns tanzen.</p>
 <p>Wir sind bereit für eine Erweiterung. Wenn Sie möchten, dass unser Studio in Ihrer Nähe tätig wird, nehmen Sie einfach Kontakt mit uns auf.</p>
 <p>Wir werden alles Mögliche tun, damit Ihr Kind oder Sie selbst so nah wie möglich an Ihrem Zuhause tanzen können.</p>
 `
@@ -649,7 +695,7 @@ Die für den Kontakt zur Verfügung stehenden Sprachen sind: Deutsch, Englisch. 
 <li>Grundschule (Alter 6-9),</li>
 <li>Teenager (Alter 10-16).</li>
 </ul>
-<p>Darüber hinaus haben wir auch einen Kurs für Erwachsene.</p>
+<p>Darüber hinaus bieten wir auch  Kurse für Erwachsene an (Contemporary und High Heels).</p>
 <p>Wir heißen jeden willkommen, der mit uns tanzen möchte.</p>
 `
                 }
@@ -669,7 +715,7 @@ Die für den Kontakt zur Verfügung stehenden Sprachen sind: Deutsch, Englisch. 
                     "content":`<p>In diesem Kurs begeben sich den Kindern auf eine magische Reise voller Bewegung und Fantasie. Wir fördern spielerisch die Grundlagen des Tanzes und der Rhythmik. Durch unsere Kurse entwickeln Kinder ihre Koordination, Flexibilität und musikalische Sensibilität. Diese frühe tänzerische Entwicklung ist die Grundlage für verschiedene Tanzstile wie klassisches Ballett und moderne Tanzrichtungen.</p>
 `,
                     "age": "3-6 Jahre",
-                    "price": "29 Euro pro Monat"
+                    "price": "30 Euro pro Monat"
 
                 }
                 ,
@@ -678,7 +724,7 @@ Die für den Kontakt zur Verfügung stehenden Sprachen sind: Deutsch, Englisch. 
                     "content":`<p>Dieser Kurs richtet sich an Grundschulkinder, die gerne tanzen, sich bewegen und sich durch Tanz ausdrücken möchten. In diesem Kurs helfen wir den Kindern, ihre Tanzfähigkeiten zu entwickeln, ihre kreativen Fähigkeiten zu entfalten und lernen, Musik zu hören und sich durch Musik auszudrücken. Wir arbeiten im Bereich des modernen Tanzes, bieten den Kindern jedoch auch die Möglichkeit, die Grundlagen des Balletts kennenzulernen.</p>
 `,
                     "age": "6-9 Jahre",
-                    "price": "29 Euro pro Monat"
+                    "price": "30 Euro pro Monat"
 
                 }
                 ,
@@ -687,7 +733,7 @@ Die für den Kontakt zur Verfügung stehenden Sprachen sind: Deutsch, Englisch. 
                     "content":`<p>Für Teenager bieten wir verschiedenen Tanzstilen, sowie Moderne Choreografie, Contamporary Tanz, Jazz an. Wir möchten, dass Jugendliche die Möglichkeit haben, sich kreativ zu entfalten, ihre Einzigartigkeit durch Tanz auszudrücken und gleichzeitig ihre körperliche Gesundheit zu stärken, ihre Koordination und Flexibilität zu verbessern. In unserer angenehmen Atmosphäre fördern wir Selbstausdruck, Selbstbewusstsein und ein Gefühl der Gemeinschaft unter jungen Tänzern.</p>
 `,
                     "age": "10-16 Jahre",
-                    "price": "29 Euro pro Monat"
+                    "price": "30 Euro pro Monat"
 
                 }
                 
@@ -722,6 +768,23 @@ Die für den Kontakt zur Verfügung stehenden Sprachen sind: Deutsch, Englisch. 
             "data": {
                 
                 0:{
+                    "title":"Idance Studio jetzt auch in Floß – wir starten!",
+                    "content":`<p>Wir freuen uns sehr, bekanntzugeben, dass <strong>Idance Studio</strong> ab sofort auch in <strong>Floß</strong> unterrichtet! Ab diesem Dienstag 2. Dezember 2025 bieten wir dort zwei neue Kursgruppen für Kinder an.</p>
+<h3><strong>Unsere neuen Kurse in Floß</strong></h3>
+<p><strong>🧚 14:15–15:00 Uhr – Frühförderung (ab 4 Jahren)</strong></p>
+<p>Spielerisches Tanzen, Motorik, Fantasie und erstes Musikgefühl.</p>
+<p><strong>🌟 15:00–16:00 Uhr – Contemporary / Modern Dance (ab 6 Jahren)</strong></p>
+<p>Kreative Bewegung, Ausdruck, Technik und ganz viel Freude am Tanz.</p>
+<h3><strong>Eröffnungsangebot im Dezember</strong></h3>
+<p>Alle Kinder sind herzlich zu einer <strong>kostenlosen Schnupperstunde</strong> eingeladen.</p>
+<p>Danach trainiert ihr den <strong>gesamten Dezember komplett kostenlos</strong> – ideal, um uns kennenzulernen und in Ruhe auszuprobieren.</p>
+<h3><strong>Anmeldung</strong></h3>
+<p>Bei Interesse schreibt uns einfach eine kurze Nachricht – wir freuen uns auf euch!</p>
+<p><strong>Let’s dance together! 💜</strong></p>
+`
+                }
+                ,
+                1:{
                     "title":"3 Jahre Idance Studio – und unser erstes großes Tanzmärchen! ",
                     "content":`<p>Am <strong>31. Mai 2025</strong> war es endlich so weit: Unser erstes eigenes Tanzspektakel wurde auf die Bühne
 gebracht – mit viel Herzblut, Fantasie und ganz viel Freude!</p>
@@ -737,7 +800,7 @@ lustigen Gespenstern und einer weisen Fee – aber auch dunklen Schatten, die si
 `
                 }
                 ,
-                1:{
+                2:{
                     "title":"Tanzaufführung - 31. Mai",
                     "content":`<p>Endlich ist es soweit – unser allererstes eigenes Bühnenprogramm als Tanzgruppe!
 Nach mehreren Auftritten in anderen Konzerten laden wir euch nun zu <strong>unserer eigenen Tanzshow</strong> ein.
@@ -747,7 +810,7 @@ Wir freuen uns auf euch!</p>
 `
                 }
                 ,
-                2:{
+                3:{
                     "title":"Willkommen in unserem neuen Tanzstudio in Windischeschenbach!",
                     "content":`<p>Wir freuen uns, Ihnen mitteilen zu können, dass unser Tanzstudio seit Januar 2024 in Windischeschenbach geöffnet ist, um unseren Schülerkreis zu erweitern und unsere Leidenschaft für Tanz zu teilen. Unser Studio ist bereits erfolgreich in Störnstein und Erbendorf tätig, und wir freuen uns darauf, talentierte neue Tänzer in unserer Familie begrüßen zu dürfen.</p>
 <p>Die Kurse finden jeden Mittwoch nach folgendem Zeitplan statt:</p>
@@ -778,7 +841,7 @@ Wir freuen uns auf euch!</p>
 `
                 }
                 ,
-                3:{
+                4:{
                     "title":"Jede Menge Showprogramm beim Störnsteiner Kinderfasching",
                     "content":`<p>Am 2. Februar hatten wir die Freude, beim Karneval in Störnstein aufzutreten. Wir präsentierten zwei Tänze: einen Frühlingstanz und einen Tanz der Cheerleader. Es bereitete uns große Freude, unsere Talente zu zeigen und das Publikum zu unterhalten.</p>
 <p>Die Kinder waren begeistert, sich zu präsentieren, und wir waren überwältigt von der positiven Resonanz des Publikums. Es war schön zu sehen, wie viele freundliche Gesichter uns anfeuerten.</p>
@@ -787,7 +850,7 @@ Wir freuen uns auf euch!</p>
 `
                 }
                 ,
-                4:{
+                5:{
                     "title":"Sehen Sie sich die spannenden Ereignisse in der Region an!",
                     "content":`<p>Wir laden Sie herzlich ein, an den aufregenden Veranstaltungen teilzunehmen, die in den kommenden Monaten stattfinden werden. Markieren Sie sich die folgenden wichtigen Termine in Ihrem Kalender:</p>
 <ul>
@@ -926,7 +989,7 @@ Wir freuen uns auf euch!</p>
                         
                         "0": {
                             "time": "13:30 - 14:15",
-                            "description": "Minis (3 - 4 Jahren) Neu ab September 2025!",
+                            "description": "Minis (3 - 4 Jahren) ",
                             "location": ""
                         }
                         ,
@@ -945,6 +1008,26 @@ Wir freuen uns auf euch!</p>
                     }
                 }
                 ,
+                2: {
+                    "title": "Dienstag",
+                    "address": "FLOß  (SCHULSTRAßE 14)",
+                    "rows": {
+                        
+                        "0": {
+                            "time": "14.15 - 15.00",
+                            "description": "Minis (ab 4 Jahren) ",
+                            "location": ""
+                        }
+                        ,
+                        "1": {
+                            "time": "15.00 - 16.00",
+                            "description": "Kids (ab 6 Jahren)",
+                            "location": ""
+                        }
+                        
+                    }
+                }
+                ,
                 3: {
                     "title": "Mittwoch",
                     "address": "WINDISCHESCHENBACH (WINTERLING-PORZELLAN-STRAßE 25)",
@@ -952,7 +1035,7 @@ Wir freuen uns auf euch!</p>
                         
                         "0": {
                             "time": "14.15 - 15.00",
-                            "description": "Minis (ab 3 Jahren) Neu ab September 2025!",
+                            "description": "Minis (ab 3 Jahren)",
                             "location": ""
                         }
                         ,
@@ -977,6 +1060,12 @@ Wir freuen uns auf euch!</p>
                         "4": {
                             "time": "18.00 – 19.00",
                             "description": "High Heels (Erwachsene)",
+                            "location": ""
+                        }
+                        ,
+                        "5": {
+                            "time": "19:00 - 20:00",
+                            "description": "Contemporary (Erwachsene, Blockkurs)",
                             "location": ""
                         }
                         
