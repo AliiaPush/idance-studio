@@ -15,6 +15,7 @@ const lang = {
                 "news": "{% for item in collections.navigations %}{{item.data.news[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
                 "contact-us": "{% for item in collections.navigations %}{{item.data.contactUs[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
                 "class-registration": "{% for item in collections.navigations %}{{item.data.classRegistration[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
+                "class-timetable": "{% for item in collections.navigations %}{{item.data.classTimetable[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
                 "privacy-policy": "{% for item in collections.navigations %}{{item.data.privacyPolicy[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
                 "legal": "{% for item in collections.navigations %}{{item.data.legal[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
                 "email": "{% for item in collections.navigations %}{{item.data.email[lang] | safe}}{% if not loop.last %},{% endif %}{% endfor %}",
@@ -132,6 +133,14 @@ const lang = {
                     "title": "{{item.data.category.title[lang] | safe}}",
                     "options": {
                         {% for option in item.data.category.options %}
+                        "{{ loop.index0 }}": "{{option[lang] | safe}}"
+                        {% if not loop.last %},{% endif %}{% endfor %}
+                    }
+                },
+                "location": {
+                    "title": "{{item.data.location.title[lang] | safe}}",
+                    "options": {
+                        {% for option in item.data.location.options %}
                         "{{ loop.index0 }}": "{{option[lang] | safe}}"
                         {% if not loop.last %},{% endif %}{% endfor %}
                     }

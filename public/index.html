@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="We at IDance studio aimed at making dance an accessible and enjoyable activity for children everywhere.">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Kaisei+HarunoUmi:wght@500;700&display=swap" rel="stylesheet" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -74,6 +74,14 @@
                 <div class="nav-link-container">
                     <a data-nav-link="#courses" href="/#courses" class="nav-link" data-key-text="navigation.data.our-courses">
                         Our courses
+                    </a>
+                </div>
+                <!-- nav link  -->
+                <!-- nav link  -->
+                <div class="nav-link-container">
+                    <a data-nav-link="class-timetable" href="/class-timetable" class="nav-link"
+                        data-key-text="navigation.data.class-timetable">
+                        Schedule
                     </a>
                 </div>
                 <!-- nav link  -->
@@ -240,7 +248,7 @@
         <!-- page topic  -->
         <div class="page-topic-container">
             <h3 class="page-topic" data-key-text="courses.title">
-                Our courses
+                Classes &amp; prices
             </h3>
         </div>
         <!-- page topic  -->
@@ -768,68 +776,129 @@ We can’t wait to see you there!</p>
                     </div>
                     <div class="form-input-container">
                         <!-- selector  -->
-                        <div data-selector="topic" data-selector-show="false" id="topic" class="form-select">
-                            <p id="topic-value" data-selected-value="" class="form-selected-text" data-key-text="contact.data.topic.options.0">
-                                Select your topic
-                            </p>
-                            <div class="form-select-arrow">
-                                <span data-selector-arrow="topic" class="material-symbols-outlined form-select-arrow-icon">
+                        
+                        <div data-selector-contain="topic" data-selector="topic" data-selector-show="false" id="topic" class="form-select">
+                            <input data-selector-checkbox="topic" type="checkbox" value="" class="selector-checkbox" id="checkbox-toggle-topic">
+                            <label for="checkbox-toggle-topic" class="form-select-label">
+                                <p id="topic-value" data-selected-value="topic" class="form-selected-text" data-key-text="contact.data.topic.options.0">
+                                    Select your topic
+                                </p>
+                                <div class="form-select-arrow">
+                                    <span data-selector-arrow="topic" class="material-symbols-outlined form-select-arrow-icon">
                                     expand_more
-                                </span>
-                            </div>
-                            <!-- options  -->
+                                    </span>
+                                </div>
+                            </label>
                             <div data-options="topic" class="form-options">
                                 
-                                <!-- option  -->
-                                <div data-option class="option-container">
+                                <label for="radio-topic-0" data-option class="option-container">
                                     <p data-option-value="0" class="option" data-key-option="contact.data.topic.options.0">
                                         Select your topic
                                     </p>
-                                </div>
-                                <!-- option  -->
+                                    
+                                </label>
                                 
-                                <!-- option  -->
-                                <div data-option class="option-container">
+                                <label for="radio-topic-1" data-option class="option-container">
                                     <p data-option-value="1" class="option" data-key-option="contact.data.topic.options.1">
                                         Sign up for a trial class
                                     </p>
-                                </div>
-                                <!-- option  -->
+                                    
+                                    <div class="option-checkbox-container">
+                                        <input 
+                                        name="radio-group-topic"
+                                        data-selector-option="topic" 
+                                        data-selector-value="Sign up for a trial class" 
+                                        type="radio" 
+                                        id="radio-topic-1" 
+                                        class="option-checkbox">
+                                        <span class="material-symbols-outlined option-check">
+                                        check
+                                        </span>
+                                    </div>
+                                    
+                                </label>
                                 
-                                <!-- option  -->
-                                <div data-option class="option-container">
+                                <label for="radio-topic-2" data-option class="option-container">
                                     <p data-option-value="2" class="option" data-key-option="contact.data.topic.options.2">
                                         Questions about courses and schedules
                                     </p>
-                                </div>
-                                <!-- option  -->
+                                    
+                                    <div class="option-checkbox-container">
+                                        <input 
+                                        name="radio-group-topic"
+                                        data-selector-option="topic" 
+                                        data-selector-value="Questions about courses and schedules" 
+                                        type="radio" 
+                                        id="radio-topic-2" 
+                                        class="option-checkbox">
+                                        <span class="material-symbols-outlined option-check">
+                                        check
+                                        </span>
+                                    </div>
+                                    
+                                </label>
                                 
-                                <!-- option  -->
-                                <div data-option class="option-container">
+                                <label for="radio-topic-3" data-option class="option-container">
                                     <p data-option-value="3" class="option" data-key-option="contact.data.topic.options.3">
                                         Request for private dance lessons
                                     </p>
-                                </div>
-                                <!-- option  -->
+                                    
+                                    <div class="option-checkbox-container">
+                                        <input 
+                                        name="radio-group-topic"
+                                        data-selector-option="topic" 
+                                        data-selector-value="Request for private dance lessons" 
+                                        type="radio" 
+                                        id="radio-topic-3" 
+                                        class="option-checkbox">
+                                        <span class="material-symbols-outlined option-check">
+                                        check
+                                        </span>
+                                    </div>
+                                    
+                                </label>
                                 
-                                <!-- option  -->
-                                <div data-option class="option-container">
+                                <label for="radio-topic-4" data-option class="option-container">
                                     <p data-option-value="4" class="option" data-key-option="contact.data.topic.options.4">
                                         Leave feedback
                                     </p>
-                                </div>
-                                <!-- option  -->
+                                    
+                                    <div class="option-checkbox-container">
+                                        <input 
+                                        name="radio-group-topic"
+                                        data-selector-option="topic" 
+                                        data-selector-value="Leave feedback" 
+                                        type="radio" 
+                                        id="radio-topic-4" 
+                                        class="option-checkbox">
+                                        <span class="material-symbols-outlined option-check">
+                                        check
+                                        </span>
+                                    </div>
+                                    
+                                </label>
                                 
-                                <!-- option  -->
-                                <div data-option class="option-container">
+                                <label for="radio-topic-5" data-option class="option-container">
                                     <p data-option-value="5" class="option" data-key-option="contact.data.topic.options.5">
                                         Other
                                     </p>
-                                </div>
-                                <!-- option  -->
+                                    
+                                    <div class="option-checkbox-container">
+                                        <input 
+                                        name="radio-group-topic"
+                                        data-selector-option="topic" 
+                                        data-selector-value="Other" 
+                                        type="radio" 
+                                        id="radio-topic-5" 
+                                        class="option-checkbox">
+                                        <span class="material-symbols-outlined option-check">
+                                        check
+                                        </span>
+                                    </div>
+                                    
+                                </label>
                                 
                             </div>
-                            <!-- options  -->
                         </div>
                         <!-- selector  -->
                     </div>

@@ -6,11 +6,12 @@ const lang = {
             "data": {
                 "home": "Home",
                 "about-us": "About us",
-                "our-courses": "Our courses",
+                "our-courses": "Classes & prices",
                 "our-team": "Our team",
                 "news": "Latest news",
                 "contact-us": "Contact us",
                 "class-registration": "Class registration",
+                "class-timetable": "Schedule",
                 "privacy-policy": "Privacy policy",
                 "legal": "Legal notice",
                 "email": "Email",
@@ -67,7 +68,7 @@ const lang = {
             }
         },
         "courses": {
-            "title":"Our courses",
+            "title":"Classes & prices",
             "age": "Age group",
             "time": "Time",
             "price": "Price",
@@ -284,6 +285,22 @@ We can’t wait to see you there!</p>
                         "3": "Teens"
                         ,
                         "4": "Custom"
+                        
+                    }
+                },
+                "location": {
+                    "title": "Location(s)",
+                    "options": {
+                        
+                        "0": "Select your location"
+                        ,
+                        "1": "Floß"
+                        ,
+                        "2": "Windischeschenbach"
+                        ,
+                        "3": "Erbendorf"
+                        ,
+                        "4": "Störnstein"
                         
                     }
                 },
@@ -578,11 +595,12 @@ Die für den Kontakt zur Verfügung stehenden Sprachen sind: Deutsch, Englisch. 
             "data": {
                 "home": "Startseite",
                 "about-us": "Über Uns",
-                "our-courses": "Unsere Kurse",
+                "our-courses": "Kurse & Preise",
                 "our-team": "Unser Team",
-                "news": "Nachrichten",
+                "news": "Aktuelles",
                 "contact-us": "Kontakt",
                 "class-registration": "Kursanmeldung",
+                "class-timetable": "Kursstundenplan",
                 "privacy-policy": "Datenschutz",
                 "legal": "Impressum",
                 "email": "Email",
@@ -639,7 +657,7 @@ Die für den Kontakt zur Verfügung stehenden Sprachen sind: Deutsch, Englisch. 
             }
         },
         "courses": {
-            "title":"Unsere Kurse",
+            "title":"Kurse & Preise",
             "age": "Alter",
             "time": "Zeit",
             "price": "Preis",
@@ -700,7 +718,7 @@ Die für den Kontakt zur Verfügung stehenden Sprachen sind: Deutsch, Englisch. 
             }
         },
         "news": {
-            "title":"Nachrichten",
+            "title":"Aktuelles",
             "data": {
                 
                 0:{
@@ -858,6 +876,22 @@ Wir freuen uns auf euch!</p>
                         "3": "Teens"
                         ,
                         "4": "Custom"
+                        
+                    }
+                },
+                "location": {
+                    "title": "Standort",
+                    "options": {
+                        
+                        "0": "Select your location"
+                        ,
+                        "1": "Floß"
+                        ,
+                        "2": "Windischeschenbach"
+                        ,
+                        "3": "Erbendorf"
+                        ,
+                        "4": "Störnstein"
                         
                     }
                 },
