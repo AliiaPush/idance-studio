@@ -32,6 +32,24 @@ category:
       de: "Teens"
     - en: "Custom"
       de: "Custom"
+location:
+  title:
+    en: "Location(s)"
+    de: "Standort"
+  placeholder:
+    en: "Select your location"
+    de: "Select your location"
+  options:
+    - en: "Select your location"
+      de: "Select your location"
+    - en: "Floß"
+      de: "Floß"
+    - en: "Windischeschenbach"
+      de: "Windischeschenbach"
+    - en: "Erbendorf"
+      de: "Erbendorf"
+    - en: "Störnstein"
+      de: "Störnstein"
 mobile:
   title:
     en: "Mobile number"
@@ -39,6 +57,13 @@ mobile:
   placeholder:
     en: "Type your mobile number here"
     de: "Geben Sie hier Ihre Handynummer ein"
+age:
+  title:
+    en: "Age"
+    de: "Age"
+  placeholder:
+    en: "Type your age here"
+    de: "Type your age here"
 email:
   title:
     en: "Email"

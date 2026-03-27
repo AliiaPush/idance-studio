@@ -12,20 +12,23 @@ aboutUs:
   en: "About us"
   de: "Über Uns"
 ourCourses:
-  en: "Our courses"
-  de: "Unsere Kurse"
+  en: "Classes & prices"
+  de: "Kurse & Preise"
 ourTeam:
   en: "Our team"
   de: "Unser Team"
 news:
   en: "Latest news"
-  de: "Nachrichten"
+  de: "Aktuelles"
 contactUs:
   en: "Contact us"
   de: "Kontakt"
 classRegistration:
   en: "Class registration"
   de: "Kursanmeldung"
+classTimetable:
+  en: "Schedule"
+  de: "Kursstundenplan"
 privacyPolicy:
   en: "Privacy policy"
   de: "Datenschutz"

@@ -484,7 +484,7 @@ body {
 }
 
 .nav-link {
-  font-family: "Kaisei HarunoUmi", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 30px;
   color: #e7e1ea;
   text-decoration: none;
@@ -586,15 +586,16 @@ body {
 }
 .header {
   width: 100vw;
-  height: 80vh;
-  height: 80dvh;
+  height: 90vh;
+  height: 90dvh;
   background-image: url("../images/header/header-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-mask-image: linear-gradient(#ab96b6, #ab96b6, #ab96b6 80%, rgba(0, 0, 0, 0));
-  mask-image: linear-gradient(#ab96b6, #ab96b6, #ab96b6 80%, rgba(0, 0, 0, 0));
-  mask-mode: alpha;
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 60%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to bottom, black 0%, black 60%, rgba(0, 0, 0, 0) 100%);
+  mask-size: cover;
+  -webkit-mask-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -612,7 +613,7 @@ body {
 }
 
 .header-texts-container {
-  width: 800px;
+  width: 100%;
 }
 
 .header-topic-container {
@@ -621,14 +622,15 @@ body {
 }
 
 .header-topic {
-  font-family: "Jockey One", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 110px;
-  font-weight: 400;
+  font-weight: 700;
+  letter-spacing: 10px;
   color: hsl(0, 0%, 100%);
   padding: 0;
   margin: 0;
   text-align: center;
-  -webkit-text-stroke: 1px #6a5a72;
+  text-shadow: 1px 1px 0 #6a5a72, -1px -1px 0 #6a5a72, 1px -1px 0 #6a5a72, -1px 1px 0 #6a5a72;
 }
 
 .header-sub-topic-container {
@@ -1894,7 +1896,6 @@ body {
   background-color: #e7e1ea;
   color: #6a5a72;
   box-sizing: border-box;
-  padding: 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1909,6 +1910,14 @@ body {
   padding: 0;
   margin: 0;
   pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
+  display: block;
 }
 
 .form-select-arrow {
@@ -1918,6 +1927,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .form-select-arrow-icon {
@@ -1964,7 +1977,12 @@ body {
   top: 105%;
   right: 0;
   box-sizing: border-box;
+  outline: 1px solid transparent;
   transition: all 100ms ease-in-out;
+}
+
+.options-border {
+  outline: 1px solid #6a5a72;
 }
 
 .option-container {
@@ -1987,6 +2005,7 @@ body {
 }
 
 .option {
+  flex: 1;
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -2008,6 +2027,52 @@ body {
 .arrow-up {
   transform: rotate(180deg);
   transform-origin: center;
+}
+
+.selector-checkbox {
+  display: none;
+}
+
+.selector-checkbox:checked ~ .form-options {
+  max-height: 300px !important;
+  outline: 1px solid #6a5a72;
+}
+
+.selector-checkbox:checked ~ .form-select-label .form-select-arrow-icon {
+  transform: rotate(180deg);
+  transform-origin: center;
+}
+
+.form-select-label {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Kaisei HarunoUmi", serif;
+  background-color: #e7e1ea;
+  color: #6a5a72;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.option-checkbox {
+  display: none;
+}
+
+.option-check {
+  opacity: 0;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-size: 22px;
+  transition: all 100ms ease-in-out;
+}
+
+.option-checkbox:checked ~ .option-check {
+  opacity: 1;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2059,6 +2124,9 @@ body {
     margin: 1rem 0;
     font-size: 18px;
     padding: 0.4rem 4rem;
+  }
+  .form-selected-text {
+    max-width: 250px;
   }
 }
 .privacy-n-policy {

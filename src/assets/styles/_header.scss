@@ -1,16 +1,24 @@
 .header {
   width: 100vw;
-  height: 80vh;
-  height: 80dvh;
+  height: 90vh;
+  height: 90dvh;
   background-image: url("../images/header/header-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-mask-image: linear-gradient($news-hover-bg, $news-hover-bg, $news-hover-bg 80%, rgb(0 0 0 / 0));
-  mask-image: linear-gradient($news-hover-bg, $news-hover-bg, $news-hover-bg 80%, rgb(0 0 0 / 0));
-  // mask-image: linear-gradient(to bottom, black, rgba(black, 0) 80%);
-  // -webkit-mask-image: linear-gradient(to bottom, black, rgba(black, 0) 80%);
-  mask-mode: alpha;
+  // -webkit-mask-image: linear-gradient($news-hover-bg, $news-hover-bg, $news-hover-bg 80%, rgb(0 0 0 / 0));
+  // mask-image: linear-gradient($news-hover-bg, $news-hover-bg, $news-hover-bg 80%, rgb(0 0 0 / 0));
+  // mask-mode: alpha;
+  -webkit-mask-image: linear-gradient(to bottom,
+      black 0%,
+      black 60%,
+      rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to bottom,
+      black 0%,
+      black 60%,
+      rgba(0, 0, 0, 0) 100%);
+  mask-size: cover;
+  -webkit-mask-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,7 +44,7 @@
 }
 
 .header-texts-container {
-  width: 800px;
+  width: 100%;
 }
 
 .header-topic-container {
@@ -47,12 +55,18 @@
 .header-topic {
   font-family: $header-font;
   font-size: 110px;
-  font-weight: 400;
+  font-weight: 700;
+  letter-spacing: 10px;
   color: hsl(0, 0%, 100%);
   padding: 0;
   margin: 0;
   text-align: center;
-  -webkit-text-stroke: 1px $purple-bg-high;
+  // -webkit-text-stroke: 1px $purple-bg-high;
+  text-shadow:
+    1px 1px 0 $purple-bg-high,
+    -1px -1px 0 $purple-bg-high,
+    1px -1px 0 $purple-bg-high,
+    -1px 1px 0 $purple-bg-high;
 }
 
 .header-sub-topic-container {

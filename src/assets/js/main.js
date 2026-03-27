@@ -1,6 +1,7 @@
 import lang from "./lang.js";
 
-const emailEndpoint = "https://idance-studio-mailer-livid.vercel.app/api/index.php";
+// const emailEndpoint = "https://idance-studio-mailer-livid.vercel.app/api/index.php";
+const emailEndpoint = "https://idance-studio-mailer.vercel.app/api/index.php";
 
 function spinner() {
   document.onreadystatechange = async () => {
@@ -152,54 +153,142 @@ function lazyLoadElements() {
 }
 lazyLoadElements();
 
-function customSelector() {
-  document.addEventListener("click", (event) => {
-    if (event.target.matches("[data-selector]")) {
-      let selector = event.target.closest("[data-selector]");
+// function customSelector() {
+//   document.addEventListener("click", (event) => {
+//     if (event.target.matches("[data-selector]")) {
+//       let selector = event.target.closest("[data-selector]");
 
-      let selectorAttVal = selector.getAttribute("data-selector");
-      let optionsContainer = document.querySelector(`[data-options="${selectorAttVal}"]`);
-      let options = optionsContainer.querySelectorAll("[data-option]");
-      let arrowIcon = document.querySelector(`[data-selector-arrow="${selectorAttVal}"]`);
-      function openOptions() {
-        optionsContainer.classList.add("option-display");
-        arrowIcon.classList.add("arrow-up");
-        selector.setAttribute("data-selector-show", "true");
-      }
-      function closeOptions() {
-        optionsContainer.classList.remove("option-display");
-        arrowIcon.classList.remove("arrow-up");
-        selector.setAttribute("data-selector-show", "false");
-      }
-      function toggleOptions() {
-        let selectorState = selector.getAttribute("data-selector-show");
+//       let selectorAttVal = selector.getAttribute("data-selector");
+//       let optionsContainer = document.querySelector(`[data-options="${selectorAttVal}"]`);
+//       let options = optionsContainer.querySelectorAll("[data-option]");
+//       let arrowIcon = document.querySelector(`[data-selector-arrow="${selectorAttVal}"]`);
+//       function openOptions() {
+//         optionsContainer.classList.add("option-display");
+//         optionsContainer.classList.add("options-border");
+//         arrowIcon.classList.add("arrow-up");
+//         selector.setAttribute("data-selector-show", "true");
+//       }
+//       function closeOptions() {
+//         optionsContainer.classList.remove("option-display");
+//         optionsContainer.classList.remove("options-border");
+//         arrowIcon.classList.remove("arrow-up");
+//         selector.setAttribute("data-selector-show", "false");
+//       }
+//       function toggleOptions() {
+//         let selectorState = selector.getAttribute("data-selector-show");
 
-        if (selectorState == "false") {
-          openOptions();
-        } else if (selectorState == "true") {
-          closeOptions();
+//         if (selectorState == "false") {
+//           openOptions();
+//         } else if (selectorState == "true") {
+//           closeOptions();
+//         }
+//       }
+//       toggleOptions();
+//       options.forEach((option) => {
+//         option.addEventListener("click", (event) => {
+//           event.stopPropagation();
+//           let optionVal = option.querySelector("[data-option-value]").getAttribute("data-option-value");
+//           selector.querySelector("[data-selected-value]").setAttribute("data-selected-value", optionVal);
+//           selector.querySelector("[data-selected-value]").textContent = option.querySelector("[data-option-value]").textContent;
+//           closeOptions();
+//         });
+//       });
+//       document.addEventListener("click", (event) => {
+//         if (!selector.contains(event.target) && !optionsContainer.contains(event.target)) {
+//           closeOptions();
+//         }
+//       });
+//     }
+//   });
+// }
+// customSelector();
+// function customSelector(multiple) {
+//   const selectors = document.querySelectorAll("[data-selector-checkbox]");
+//   selectors.forEach((selector) => {
+//     const selectorId = selector.getAttribute("data-selector-checkbox");
+//     const options = selector.querySelectorAll(`[data-selector-option="${selectorId}"]`);
+//     if (!selectorId) return;
+//     const isMultiple = selector.hasAttribute("data-mulitple");
+//     if (isMultiple) {
+//       handleMultiple();
+//     } else {
+//       handleSingle(options, selectorId, selector);
+//     }
+//     handleOutsideClick(selector, selectorId);
+//   })
+
+//   function handleMultiple() {
+//     console.log("multiple");
+//   }
+//   function handleSingle(options, selectorId, checkbox) {
+//     options.forEach((option) => {
+//       option.addEventListener("change", (event) => {
+//         console.log("changed");
+//         handleClose(checkbox);
+//       });
+//     })
+//     console.log("single");
+//   }
+//   function handleClose(checkbox) {
+//     checkbox.checked = false;
+//   }
+//   function handleOutsideClick(checkbox, selectorId) {
+//     const elements = document.querySelectorAll(
+//       `[data-selector-contain="${selectorId}"]`
+//     );
+//     document.addEventListener("click", (event) => {
+//       const clickedInside = Array.from(elements).some(el =>
+//         el.contains(event.target)
+//       );
+
+//       if (!clickedInside) {
+//         handleClose(checkbox);
+//       }
+//     });
+//   }
+// }
+// customSelector();
+function initCustomSelectors() {
+  const containers = document.querySelectorAll("[data-selector-contain]");
+
+  containers.forEach((container) => {
+    const selectorId = container.getAttribute("data-selector-contain");
+    const mainToggle = container.querySelector(`[data-selector-checkbox="${selectorId}"]`);
+    const displayValue = container.querySelector(`[data-selected-value="${selectorId}"]`);
+    const isMultiple = mainToggle.hasAttribute("data-mulitple");
+    const options = container.querySelectorAll(`[data-selector-option="${selectorId}"]`);
+
+    const updateDisplay = () => {
+      const selectedOptions = Array.from(options).filter(opt => opt.checked);
+      const values = selectedOptions.map(opt => opt.getAttribute("data-selector-value"));
+
+      // Update text and the hidden input's value
+      const joinedValues = values.join(", ");
+      displayValue.textContent = joinedValues || "Select an option"; // Fallback placeholder
+      mainToggle.value = joinedValues;
+    };
+
+    options.forEach((option) => {
+      option.addEventListener("change", () => {
+        updateDisplay();
+
+        // Requirement: Single select closes on click, multiple stays open
+        if (!isMultiple) {
+          mainToggle.checked = false;
         }
+      });
+    });
+
+    // Requirement: Close when clicking outside
+    document.addEventListener("click", (event) => {
+      if (!container.contains(event.target)) {
+        mainToggle.checked = false;
       }
-      toggleOptions();
-      options.forEach((option) => {
-        option.addEventListener("click", (event) => {
-          event.stopPropagation();
-          let optionVal = option.querySelector("[data-option-value]").getAttribute("data-option-value");
-          selector.querySelector("[data-selected-value]").setAttribute("data-selected-value", optionVal);
-          selector.querySelector("[data-selected-value]").textContent = option.querySelector("[data-option-value]").textContent;
-          closeOptions();
-        });
-      });
-      document.addEventListener("click", (event) => {
-        if (!selector.contains(event.target) && !optionsContainer.contains(event.target)) {
-          closeOptions();
-        }
-      });
-    }
+    });
   });
 }
-customSelector();
 
+initCustomSelectors();
 
 function loadNews(newsNavBtns, newsImg, news) {
   if (localStorage.getItem("news") == null) {
@@ -416,7 +505,7 @@ function hideFormSpinner(formSpinner, sendBtn) {
 
 function contact() {
   const name = document.getElementById("name");
-  const topic = document.getElementById("topic-value");
+  const topic = document.querySelector('[data-selector-checkbox="topic"]');
   const email = document.getElementById("email");
   const subject = document.getElementById("subject");
   const message = document.getElementById("message");
@@ -431,7 +520,7 @@ function contact() {
 
       form.append("execution", "contact");
       form.append("name", name.value);
-      form.append("topic", topic.getAttribute("data-selected-value"));
+      form.append("topic", topic.value);
       form.append("email", email.value);
       form.append("subject", subject.value);
       form.append("message", message.value);
@@ -459,7 +548,9 @@ function register() {
   const firstName = document.getElementById("first-name");
   const lastName = document.getElementById("last-name");
   const mobileNumber = document.getElementById("mobile-number");
-  const classCategory = document.getElementById("class-category-value");
+  const age = document.getElementById("age");
+  // const classCategory = document.getElementById("class-category-value");
+  const locations = document.querySelector('[data-selector-checkbox="location"]')
   const email = document.getElementById("email");
   const message = document.getElementById("message");
   const sendBtn = document.getElementById("send");
@@ -475,8 +566,10 @@ function register() {
       form.append("execution", "register");
       form.append("first_name", firstName.value);
       form.append("last_name", lastName.value);
-      form.append("class_category", classCategory.getAttribute("data-selected-value"));
+      // form.append("class_category", classCategory.getAttribute("data-selected-value"));
+      form.append("locations", locations.value);
       form.append("mobile_number", mobileNumber.value);
+      form.append("age", age.value);
       form.append("email", email.value);
       form.append("message", message.value);
 

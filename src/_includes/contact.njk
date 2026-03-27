@@ -31,7 +31,7 @@
                     </div>
                     <div class="form-input-container">
                         <!-- selector  -->
-                        <div data-selector="topic" data-selector-show="false" id="topic" class="form-select">
+                        {# <div data-selector="topic" data-selector-show="false" id="topic" class="form-select">
                             <p id="topic-value" data-selected-value="" class="form-selected-text" data-key-text="contact.data.topic.options.0">
                                 {{ item.data.topic.placeholder.en }}
                             </p>
@@ -53,6 +53,42 @@
                                 {% endfor %}
                             </div>
                             <!-- options  -->
+                        </div> #}
+                        <div data-selector-contain="topic" data-selector="topic" data-selector-show="false" id="topic" class="form-select">
+                            <input data-selector-checkbox="topic" type="checkbox" value="" class="selector-checkbox" id="checkbox-toggle-topic">
+                            <label for="checkbox-toggle-topic" class="form-select-label">
+                                <p id="topic-value" data-selected-value="topic" class="form-selected-text" data-key-text="contact.data.topic.options.0">
+                                    {{ item.data.topic.placeholder.en }}
+                                </p>
+                                <div class="form-select-arrow">
+                                    <span data-selector-arrow="topic" class="material-symbols-outlined form-select-arrow-icon">
+                                    expand_more
+                                    </span>
+                                </div>
+                            </label>
+                            <div data-options="topic" class="form-options">
+                                {% for option in item.data.topic.options %}
+                                <label for="radio-topic-{{ loop.index0 }}" data-option class="option-container">
+                                    <p data-option-value="{{ loop.index0 }}" class="option" data-key-option="contact.data.topic.options.{{ loop.index0 }}">
+                                        {{ option.en }}
+                                    </p>
+                                    {% if loop.index0 != 0 %}
+                                    <div class="option-checkbox-container">
+                                        <input 
+                                        name="radio-group-topic"
+                                        data-selector-option="topic" 
+                                        data-selector-value="{{ option.en }}" 
+                                        type="radio" 
+                                        id="radio-topic-{{ loop.index0 }}" 
+                                        class="option-checkbox">
+                                        <span class="material-symbols-outlined option-check">
+                                        check
+                                        </span>
+                                    </div>
+                                    {% endif %}
+                                </label>
+                                {% endfor %}
+                            </div>
                         </div>
                         <!-- selector  -->
                     </div>
