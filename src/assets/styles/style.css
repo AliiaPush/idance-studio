@@ -484,7 +484,7 @@ body {
 }
 
 .nav-link {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Kaisei HarunoUmi", serif;
   font-size: 30px;
   color: #e7e1ea;
   text-decoration: none;
@@ -622,7 +622,7 @@ body {
 }
 
 .header-topic {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 110px;
   font-weight: 700;
   letter-spacing: 10px;
@@ -726,6 +726,7 @@ body {
   }
   .header-topic {
     font-size: 75px;
+    letter-spacing: 5px;
   }
   .header-sub-topic {
     font-size: 18px;
@@ -741,8 +742,9 @@ body {
     width: 100%;
   }
   .header-topic {
-    font-size: 60px;
-    padding: 0 10px 0 10px;
+    font-size: 50px;
+    padding: 0 2px;
+    letter-spacing: 5px;
   }
   .header-sub-topic {
     font-size: 16px;
@@ -751,6 +753,13 @@ body {
     margin-top: 3rem;
     max-width: 240px;
     font-size: 16px;
+  }
+}
+@media (max-width: 350px) {
+  .header-topic {
+    font-size: 46px;
+    padding: 0 2px;
+    letter-spacing: 0px;
   }
 }
 .goal {

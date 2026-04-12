@@ -649,7 +649,7 @@ Die für den Kontakt zur Verfügung stehenden Sprachen sind: Deutsch, Englisch. 
                 "news": "Aktuelles",
                 "contact-us": "Kontakt",
                 "class-registration": "Kursanmeldung",
-                "class-timetable": "Kursstundenplan",
+                "class-timetable": "Stundenplan",
                 "privacy-policy": "Datenschutz",
                 "legal": "Impressum",
                 "email": "Email",

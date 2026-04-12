@@ -182,6 +182,7 @@
 
   .header-topic {
     font-size: 75px;
+    letter-spacing: 5px;
   }
 
   .header-sub-topic {
@@ -202,8 +203,9 @@
   }
 
   .header-topic {
-    font-size: 60px;
-    padding: 0 10px 0 10px;
+    font-size: 50px;
+    padding: 0 2px;
+    letter-spacing: 5px;
   }
 
   .header-sub-topic {
@@ -215,5 +217,13 @@
     max-width: 240px;
     // height: 40px;
     font-size: 16px;
+  }
+}
+
+@media (max-width: 350px) {
+  .header-topic {
+    font-size: 46px;
+    padding: 0 2px;
+    letter-spacing: 0px;
   }
 }

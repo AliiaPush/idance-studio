@@ -28,7 +28,7 @@ classRegistration:
   de: "Kursanmeldung"
 classTimetable:
   en: "Schedule"
-  de: "Kursstundenplan"
+  de: "Stundenplan"
 privacyPolicy:
   en: "Privacy policy"
   de: "Datenschutz"
