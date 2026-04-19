@@ -59,11 +59,11 @@ mobile:
     de: "Geben Sie hier Ihre Handynummer ein"
 age:
   title:
-    en: "Age"
-    de: "Age"
+    en: "Participant’s age"
+    de: "Alter des Teilnehmers"
   placeholder:
-    en: "Type your age here"
-    de: "Type your age here"
+    en: "Type participant’s age here"
+    de: "Alter des Teilnehmers eingeben"
 email:
   title:
     en: "Email"

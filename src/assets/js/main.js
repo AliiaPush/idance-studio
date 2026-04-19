@@ -1,7 +1,7 @@
 import lang from "./lang.js";
 
-// const emailEndpoint = "https://idance-studio-mailer-livid.vercel.app/api/index.php";
-const emailEndpoint = "https://idance-studio-mailer.vercel.app/api/index.php";
+const emailEndpoint = "https://idance-studio-mailer-livid.vercel.app/api/index.php";
+// const emailEndpoint = "https://idance-studio-mailer.vercel.app/api/index.php";
 
 function spinner() {
   document.onreadystatechange = async () => {

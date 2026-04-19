@@ -328,8 +328,8 @@ We can’t wait to see you there!</p>
                     "placeholder": "Type your mobile number here"
                 },
                 "age": {
-                    "title": "Age",
-                    "placeholder": "Type your age here"
+                    "title": "Participant’s age",
+                    "placeholder": "Type participant’s age here"
                 },
                 "email": {
                     "title": "Email",
@@ -967,8 +967,8 @@ Wir freuen uns auf euch!</p>
                     "placeholder": "Geben Sie hier Ihre Handynummer ein"
                 },
                 "age": {
-                    "title": "Age",
-                    "placeholder": "Type your age here"
+                    "title": "Alter des Teilnehmers",
+                    "placeholder": "Alter des Teilnehmers eingeben"
                 },
                 "email": {
                     "title": "Email",
