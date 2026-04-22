@@ -10,19 +10,19 @@ classes:
   - time: 14.15 - 15.00
     description:
       en: "Minis (Age Group 3 - 4) "
-      de: Minis (ab 3 Jahren)
+      de: Minis (3 - 4 Jahre)
   - time: 15.00 - 15.45
     description:
       en: Minis (Age Group 4 - 6)
-      de: Minis (ab 4 Jahren)
+      de: Minis (4 - 6 Jahre)
   - time: 16.00 - 17.00
     description:
       en: Kids (Age Group 6 - 9)
-      de: Kids (ab 6 Jahren)
+      de: Kids (6 - 10 Jahre)
   - time: 17.00 - 18.00
     description:
       en: Teens (Age Group 9 - 16)
-      de: Teens (ab 9 Jahren)
+      de: Teens (ab 10 Jahre)
   - time: 18.00 – 19.00
     description:
       en: High Heels (Adults)
