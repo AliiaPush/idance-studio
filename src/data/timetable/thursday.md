@@ -9,14 +9,14 @@ location:
 classes:
   - time: 14.15 - 15.00
     description:
-      en: Minis (Age Group 3 - 6)
-      de: Minis (ab 3 Jahren)
+      en: Minis (Age Group 3 - 5)
+      de: Minis ( 3 - 5 Jahre)
   - time: 15.00 - 16.00
     description:
-      en: Kids (Age Group 6 - 7)
-      de: Kids (6-7 Jahren)
+      en: Kids (Age Group 6 - 8)
+      de: Kids ( 6 - 8 Jahre)
   - time: 16:00 - 17:00
     description:
-      en: Kids (Age Group 8 - 10)
-      de: Kids (8-10 Jahren)
+      en: Kids (Age Group 9 - 12)
+      de: Kids ( 9 -12 Jahre)
 ---
