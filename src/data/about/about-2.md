@@ -6,7 +6,7 @@ image: /assets/images/goals/IMG_7069.webp
 reverse: true
 description:
   en: >-
-    We started our work in 2022, and to this day, we operate in three locations:
+    We started our work in 2022, and to this day, we operate in four locations:
 
 
     * Störnstein
@@ -18,7 +18,7 @@ description:
     * Floß
 
 
-    We have over **150 children** dancing with us already.
+    We have over **170 children** dancing with us already.
 
 
     We are ready for expansion. If you'd like our studio to start operating near you, just get in touch with us.
@@ -27,7 +27,7 @@ description:
     We will do everything possible to ensure that your child or you yourself can dance as close to home as possible.
   de: >-
     Wir haben unsere Arbeit im Jahr 2022 begonnen und betreiben bis heute an
-    drei Standorten:
+    vier Standorten:
 
 
     * Störnstein
@@ -39,7 +39,7 @@ description:
     * Floß
 
 
-    Wir haben bereits über **150 Kinder**, die bei uns tanzen.
+    Wir haben bereits über **170 Kinder**, die bei uns tanzen.
 
 
     Wir sind bereit für eine Erweiterung. Wenn Sie möchten, dass unser Studio in Ihrer Nähe tätig wird, nehmen Sie einfach Kontakt mit uns auf.
