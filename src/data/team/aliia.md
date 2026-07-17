@@ -11,42 +11,51 @@ bio:
   de: Inhaberin, Tanzlehrerin (Frühförderung, Ballett, Moderne Choreography)
 description:
   en: >-
-    I'm Alia Pushilina, and I've been dancing my entire conscious life, starting
-    at the age of 7. After completing school, I pursued a dance degree at a
-    university in America. Due to life circumstances, I couldn't stay in the
-    USA, and instead, I spent three years studying in Russia, specializing in
-    ballet, folk dance, and contemporary choreography, ultimately earning my
-    qualification as a dance teacher.
+    My name is Aliia Pushilina, and I have been dancing since the age of seven.
+    Dance has been an important part of my life for as long as I can remember.
 
 
-    I also danced at the Mirror Dance Theater, taught children, and attended various dance workshops in Russia, America, and Germany.
+    After finishing school, I decided to study dance at a university in the United States. However, due to personal circumstances, I was unable to remain there permanently and continued my studies in Russia instead. There, I studied ballet, folk dance and contemporary choreography for three years and qualified as a dance teacher.
 
 
-    With two daughters—one teaching contemporary dance at our studio and the other dancing herself. 
+    During my time in Russia, I also performed with the Zerkalo Dance Theatre, taught children and participated in various dance workshops in Russia, Germany and the United States.
 
 
-    Upon arriving in Germany in 2018, I quickly noticed that pursuing dance in small towns and villages is often challenging, requiring children to travel to larger cities. This led me to the decision to start teaching dance in Störnstein. My proposal immediately caught attention, revealing that many children would love to dance close to home.
+    I have two daughters. One of them teaches Contemporary Dance at our studio, while the other is also a passionate dancer.
 
 
-    Working with children and instilling in them a love for dance brings me immense pleasure. I hope that all children in small towns and villages will have the opportunity to dance.
+    When I moved to Germany in 2018, I quickly noticed that children living in smaller towns and villages often have limited access to regular dance classes. Parents frequently have to drive them to larger towns or cities.
+
+
+    This inspired me to start offering dance classes in Störnstein. The response was very positive from the very beginning, and it soon became clear that many children wanted the opportunity to dance close to home.
+
+
+    Working with children brings me great joy. It is especially important to me not only to teach them dance steps, but also to help them discover the joy of movement and develop a love for dance.
+
+
+    My goal is to give as many children as possible the opportunity to dance, regardless of whether they live in a large city or a small community.
   de: >-
-    Ich bin Aliia Pushilina und tanze mein ganzes bewusstes Leben lang, seit ich
-    7 Jahre alt bin. Nach meinem Schulabschluss entschied ich mich für ein
-    Tanzstudium an einer Universität in Amerika. Aufgrund von Lebensumständen
-    konnte ich jedoch nicht in den USA bleiben und habe stattdessen drei Jahre
-    lang in Russland studiert, wo ich Ballett, Volkstanz und moderne
-    Choreografie studierte. Dort erlangte ich die Qualifikation als
-    Tanzpädagogin.
+    Ich bin Aliia Pushilina und tanze bereits seit meinem siebten Lebensjahr.
+    Tanz begleitet mich also schon fast mein ganzes Leben.
 
 
-    Während meiner Zeit in Russland tanzte ich auch im Tanztheater Zerkalo, unterrichtete Kinder und nahm an verschiedenen Tanzworkshops in Russland, Amerika und Deutschland teil.
+    Nach meinem Schulabschluss entschied ich mich für ein Tanzstudium an einer Universität in den USA. Aufgrund persönlicher Lebensumstände konnte ich jedoch nicht dauerhaft dortbleiben. Deshalb setzte ich mein Studium in Russland fort. Dort studierte ich drei Jahre lang Ballett, Volkstanz und moderne Choreografie und schloss meine Ausbildung als Tanzpädagogin ab.
 
 
-    Ich habe zwei Töchtern, von denen eine Contemporary Tanz in unserem Studio unterrichtet und die andere selbst tanzt.
+    Während meiner Zeit in Russland tanzte ich außerdem im Tanztheater „Zerkalo“, unterrichtete Kinder und nahm an verschiedenen Tanzworkshops in Russland, Deutschland und den USA teil.
 
 
-    Als ich 2018 nach Deutschland kam, fiel mir sofort auf, dass es in kleinen Städten und Dörfern oft schwer ist, Tanzunterricht zu nehmen. Kinder müssen oft in größere Städte gebracht werden. Deshalb entschied ich mich, selbst Tanzunterricht in Sternstein zu geben. Mein Angebot stieß sofort auf Interesse, und es stellte sich heraus, dass viele Kinder gerne in der Nähe ihres Zuhauses tanzen würden.
+    Ich habe zwei Töchter. Eine von ihnen unterrichtet Contemporary Dance in unserem Studio, die andere tanzt selbst mit großer Begeisterung.
 
 
-    Es bereitet mir große Freude, mit Kindern zu arbeiten und ihnen die Liebe zum Tanz zu vermitteln. Ich hoffe, dass alle Kinder in kleinen Städten und Dörfern die Möglichkeit haben werden, zu tanzen.
+    Als ich 2018 nach Deutschland kam, fiel mir schnell auf, dass es für Kinder aus kleineren Städten und Dörfern oft schwierig ist, regelmäßig Tanzunterricht zu besuchen. Häufig müssen ihre Eltern sie dafür in größere Städte fahren.
+
+
+    Deshalb entschied ich mich, selbst Tanzunterricht in Störnstein anzubieten. Das Interesse war von Anfang an sehr groß, und es zeigte sich schnell, dass viele Kinder gerne in der Nähe ihres Wohnortes tanzen möchten.
+
+
+    Die Arbeit mit Kindern bereitet mir große Freude. Es ist mir besonders wichtig, ihnen nicht nur Tanzschritte beizubringen, sondern auch die Freude an Bewegung und die Liebe zum Tanz zu vermitteln.
+
+
+    Mein Wunsch ist es, dass möglichst viele Kinder – unabhängig davon, ob sie in einer großen Stadt oder in einem kleinen Ort leben – die Möglichkeit bekommen, zu tanzen.
 ---
