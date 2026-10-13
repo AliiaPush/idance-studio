@@ -9,15 +9,15 @@ location:
   de: ERBENDORF (ALTENSTÄDTER STR. 6 - SPORTHALLE) / WINDISCHESCHENBACH
     (WINTERLING-PORZELLAN-STRAßE 25)
 classes:
-  - time: 14.15 - 15.00
+  - time: 14.15 - 15.00 Erbendorf
     description:
       en: Minis (Age Group 4 - 5)
       de: Minis ( 4 - 5 Jahre)
-  - time: 15.00 - 16.00
+  - time: 15.00 - 16.00 Erbendorf
     description:
       en: Kids (Age Group 6 - 8)
       de: Kids ( 6 - 8 Jahre)
-  - time: 16:00 - 17:00
+  - time: 16:00 - 17:00 Erbendorf
     description:
       en: Kids (Age Group 9 - 12)
       de: Kids ( 9 -12 Jahre)
