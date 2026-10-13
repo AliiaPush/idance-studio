@@ -25,10 +25,10 @@ classes:
       de: Teens (ab 10 Jahre)
   - time: 18.00 – 19.00
     description:
-      en: High Heels (Adults)
-      de: High Heels (Erwachsene)
+      en: High Heels for Adults
+      de: High Heels für Erwachsene
   - time: 19:00 - 20:00
     description:
-      en: Contemporary (Adults, block course)
-      de: Contemporary (Erwachsene, Blockkurs)
+      en: Contemporary for Adults
+      de: Contemporary für Erwachsene
 ---
