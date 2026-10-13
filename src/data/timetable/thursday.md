@@ -4,8 +4,10 @@ title:
   de: Donnerstag
 dayNo: 4
 location:
-  en: ERBENDORF (ALTENSTÄDTER STR. 6 - SPORTHALLE)
-  de: ERBENDORF (ALTENSTÄDTER STR. 6 - SPORTHALLE)
+  en: ERBENDORF (ALTENSTÄDTER STR. 6 - SPORTHALLE) / WINDISCHESCHENBACH
+    (WINTERLING-PORZELLAN-STRAßE 25)
+  de: ERBENDORF (ALTENSTÄDTER STR. 6 - SPORTHALLE) / WINDISCHESCHENBACH
+    (WINTERLING-PORZELLAN-STRAßE 25)
 classes:
   - time: 14.15 - 15.00
     description:
@@ -19,4 +21,12 @@ classes:
     description:
       en: Kids (Age Group 9 - 12)
       de: Kids ( 9 -12 Jahre)
+  - time: 19.00 - 20.00 Windischeschenbach
+    description:
+      en: Hip-Hop Dance for Adults
+      de: Hip-Hop für Erwachsene
+  - time: 20.00 - 21.00 Windischeschenbach
+    description:
+      en: Jazz Dance for Adults
+      de: Jazz Dance für Erwachsene
 ---
