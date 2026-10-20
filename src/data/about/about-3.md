@@ -14,25 +14,19 @@ description:
     * elementary school (age 6-9),
     * teenagers (age 10-16).
 
-    Additionally, we offer courses for adults (Contemporary and High Heels).
+    Additionally, we offer courses for adults.
 
     We welcome anyone who wants to dance with us.
-  de: >-
+  de: |-
     Wir arbeiten mit Kindern jeden Alters, beginnend ab drei Jahren.
-
 
     Wir bieten Programme in drei Hauptaltersgruppen an:
 
-
     * Vorschule (Alter 3-6),
-
     * Grundschule (Alter 6-9),
-
     * Teenager (Alter 10-16).
 
-
-    Darüber hinaus bieten wir auch  Kurse für Erwachsene an (Contemporary und High Heels).
-
+    Darüber hinaus bieten wir auch  Kurse für Erwachsene an.
 
     Wir heißen jeden willkommen, der mit uns tanzen möchte.
 ---
