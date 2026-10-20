@@ -18,7 +18,7 @@ description:
     * Floß
 
 
-    We have over **170 children** dancing with us already.
+    We have over **200 children** dancing with us already.
 
 
     We are ready for expansion. If you'd like our studio to start operating near you, just get in touch with us.
@@ -39,7 +39,7 @@ description:
     * Floß
 
 
-    Wir haben bereits über **170 Kinder**, die bei uns tanzen.
+    Wir haben bereits über **200 Kinder**, die bei uns tanzen.
 
 
     Wir sind bereit für eine Erweiterung. Wenn Sie möchten, dass unser Studio in Ihrer Nähe tätig wird, nehmen Sie einfach Kontakt mit uns auf.
